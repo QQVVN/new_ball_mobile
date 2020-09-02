@@ -1,0 +1,292 @@
+aside {
+  &.teach {
+    padding: 0 0 6.25rem 0;
+    width: 100vw;
+    height: calc(100vh - 2.5rem - .625rem);
+    background: #f7f7f7;
+    z-index: 0;
+    display: inline-block;
+    position: fixed;
+    .title {
+      padding: .625rem 3.125rem 0 3.125rem;
+      background: #fff;
+      font-size: 1.125rem;
+      box-shadow: 0px 1px .1875rem 1px #e7e7e7;
+      div {
+        color: #838ba0;
+        display: inline-block;
+        line-height: 40px;
+        width: 5rem;
+        text-align: center;
+        border-bottom: .125rem solid transparent;
+        position: relative;
+        &:last-child {
+          float: right;
+        }
+        &.active,
+        &:hover,
+        &.hover {
+          color: #4d515d;
+          border-bottom: .125rem solid #7c87bc;
+        }
+      }
+    }
+    .nav {
+      overflow-x: scroll;
+      background: #fff;
+      white-space: nowrap;
+      padding: .625rem calc(.6875rem + .625rem) .625rem calc(.6875rem + .625rem);
+      border-bottom: 1px solid #e0e3f3;
+      div {
+        display: inline-block;
+        color: #838ba0;
+        text-align: center;
+        width: 5rem;
+        line-height: 2.1875rem;
+        border-radius: 1.125rem;
+        &.active,
+        &:hover,
+        &:active {
+          background: linear-gradient(to right, #93a0e0 0%, #4a5ec5 100%);
+          color: #fff;
+        }
+      }
+    }
+    .content {
+      height: calc(100vh - (6.625rem + 3.5rem + 2.625rem));
+      overflow-y: scroll;
+      padding: 0 0 6.25rem 0;
+      .card {
+        background: #fff;
+        padding: 0 .6875rem 3.125rem .6875rem;
+        &:first-child {
+          margin: .625rem 0 0 0;
+        }
+        h1 {
+          color: #4d515d;
+          padding: .9375rem 0 .9375rem .75rem;
+          border-bottom: 1px solid #e0e3f3;
+          position: relative;
+          line-height: 1.5rem;
+          white-space: nowrap;
+          p{
+            display: inline-block;
+            color: #838ba0;
+            font-size: .8125rem;
+            font-weight: lighter;
+            line-height: 1;
+            vertical-align: middle;
+            margin: 0 0 0 .3125rem;
+          }
+          &:before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            content: "";
+            width: .25rem;
+            height: 1.0625rem;
+            background: #b5c1ff;
+            border-radius: 8px;
+          }
+        }
+        .vs_area {
+          position: relative;
+          padding: 1.875rem 2.1875rem 0 2.1875rem;
+          overflow: hidden;
+          height: 6.25rem;
+          .wrap {
+            line-height: 4.375rem;
+            &:first-child {
+              float: left;
+              .name {
+                margin: 0 .625rem 0 0;
+                display: inline-block;
+                vertical-align: top;
+              }
+            }
+            &:last-child {
+              float: right;
+              .name {
+                margin: 0 0 0 .625rem;
+                display: inline-block;
+                vertical-align: top;
+              }
+            }
+            .name {
+              text-align: center;
+              line-height: 1;
+              color: #4d515d;
+              p {
+                &:first-child {
+                  font-weight: bold;
+                  padding: 0 0 .3125rem 0;
+                }
+              }
+            }
+            span{
+              width: 2.625rem;
+              height: 2.375rem;
+            }
+            .icon {
+              background: url(../images/teach/confrontation.png) no-repeat;
+              background-size: 200%;
+              background-position: 0 0;
+              vertical-align: top;
+              display: inline-block;
+            }
+            .icon_o {
+              background: url(../images/teach/confrontation.png) no-repeat;
+              background-size: 200%;
+              background-position: -2.625rem 0;
+              vertical-align: top;
+              display: inline-block;
+            }
+          }
+          .vs_mid_area {
+            position: absolute;
+            left: 50%;
+            top: 1.875rem;
+            transform: translate(-50%, 0);
+            text-align: center;
+            p {
+              &:first-child {
+                color: #838ba0;
+                font-family: "微軟正黑體";
+                font-size: 1.25rem;
+              }
+              &:last-child {
+                color: #556de7;
+                font-size: .875rem;
+              }
+            }
+          }
+        }
+        p {
+          &.ex_1 {
+            text-align: center;
+            font-weight: bold;
+            color: #4a5ec5;
+            padding: 1.875rem 0 0 0;
+          }
+        }
+        .bingo_area {
+          position: relative;
+          overflow: hidden;
+          height: 5rem;
+          line-height: 5rem;
+          margin: 1.25rem 0 0 0;
+          .bingo_bot {
+            border-radius: 3.125rem;
+            padding: .375rem 0 .375rem 0;
+            overflow: hidden;
+            line-height: 4.375rem;
+            height: 4.375rem;
+            vertical-align: middle;
+            display: inline-block;
+            width: 100%;
+            font-size: .875rem;
+            background: linear-gradient(
+              to right,
+              #e7eefd 0%,
+              #effbff 40%,
+              #effbff 60%,
+              #e7eefd 100%
+            );
+          }
+          .wrap {
+            line-height: 3.625rem;
+            .name {
+              display: inline-block;
+              line-height: 1rem;
+              text-align: center;
+              vertical-align: middle;
+              p {
+                &.red.red {
+                  color: #f30d0d;
+                }
+                &:first-child {
+                  color: #838ba0;
+                  margin: 0 0 .1875rem 0;
+                }
+                &:last-child {
+                  font-weight: bold;
+                  color: #4d515d;
+                }
+              }
+            }
+            .icon {
+              width: 1.5625rem;
+              height: 1.5625rem;
+              display: inline-block;
+              vertical-align: middle;
+              &.active {
+                background: url(../images/teach/golds.png) no-repeat;
+                background-size: 200%;
+                background-position: 0 0;
+              }
+              &.half {
+                background: url(../images/teach/golds.png) no-repeat;
+                background-size: 200%;
+                background-position: -1.5625rem 0;
+              }
+            }
+            &:first-child {
+              float: left;
+              padding: 0 0 0 .625rem;
+              .name {
+                margin: 0 0 0 .3125rem;
+              }
+            }
+            &:last-child {
+              float: right;
+              padding: 0 .625rem 0 0;
+              .name {
+                margin: 0 .3125rem 0 0;
+              }
+            }
+          }
+          .mid_bingo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            border-radius: 6.25rem;
+            text-align: center;
+            background: #e9f5ff;
+            text-align: center;
+            width: 5rem;
+            height: 5rem;
+            line-height: 5rem;
+            .wrap_p{
+              line-height: 1;
+              display: inline-block;
+              vertical-align: middle;
+            }
+            p {
+              &.point {
+                font-size: 1.5rem;
+                color: #4a5ec5;
+                padding: .3125rem 0 .125rem 0;
+                line-height: 1.5rem;
+              }
+              &:first-child {
+                color: #4d515d;
+                font-size: .9375rem;
+                line-height: .9375rem;
+              }
+              &:last-child {
+                font-size: .75rem;
+                color: #838ba0;
+                line-height: .75rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
