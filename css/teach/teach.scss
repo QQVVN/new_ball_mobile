@@ -132,6 +132,11 @@ aside {
                 margin: 0 0.625rem 0 0;
                 display: inline-block;
                 vertical-align: top;
+                span {
+                  &.vs_area_red {
+                    color: #f30d0d;
+                  }
+                }
               }
             }
             &:last-child {
@@ -187,6 +192,7 @@ aside {
               &:last-child {
                 color: #556de7;
                 font-size: 0.875rem;
+                margin-top: 1rem;
               }
             }
           }

@@ -10846,6 +10846,9 @@ aside.teach .content .card .vs_area .wrap:first-child .name {
   display: inline-block;
   vertical-align: top;
 }
+aside.teach .content .card .vs_area .wrap:first-child .name span.vs_area_red {
+  color: #f30d0d;
+}
 aside.teach .content .card .vs_area .wrap:last-child {
   float: right;
 }
@@ -10896,6 +10899,7 @@ aside.teach .content .card .vs_area .vs_mid_area p:first-child {
 aside.teach .content .card .vs_area .vs_mid_area p:last-child {
   color: #556de7;
   font-size: 0.875rem;
+  margin-top: 1rem;
 }
 aside.teach .content .card p.ex_1 {
   text-align: center;
