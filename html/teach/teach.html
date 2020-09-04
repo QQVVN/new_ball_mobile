@@ -27,6 +27,7 @@
 
 <body>
     <aside class="teach">
+        <!-- nav -->
         <div class="nav">
             <div><span class="teach_ball_icon_1"></span><span class="nav_ball_type">足球</span></div>
             <div><span class="teach_ball_icon_2"></span><span class="nav_ball_type">籃球</span></div>
@@ -35,13 +36,14 @@
             <div><span class="teach_ball_icon_2"></span><span class="nav_ball_type">籃球</span></div>
             <div><span class="teach_ball_icon_3"></span><span class="nav_ball_type">棒球</span></div>
         </div>
+        <!-- title -->
         <div class="title">
             <div class="active">讓球<a href="./teach.html"></a></div>
             <div>大小球<a href="./teach_bs.html"></a></div>
         </div>
 
         <div class="content">
-            <div class="card">
+            <!-- <div class="card">
                 <h1>和局</h1>
                 <div class="vs_area">
                     <div class="wrap">
@@ -65,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="ex_1">投注本金 <span>1000</span>元</p>
+                <p class="ex_1">投注本金 <span>1000</span>元</p> -->
                 <!-- <div class="bingo_area">
                     <div class="bingo_bot">
                         <div class="wrap">
@@ -93,7 +95,7 @@
                     </div>
 
                 </div> -->
-                <div class="bingo_area">
+                <!-- <div class="bingo_area">
                     <div class="bingo_bot">
                         <div class="wrap">
                             <div class="icon"></div>
@@ -120,19 +122,88 @@
                     </div>
 
                 </div>
+            </div> -->
+
+            <!-- 和局 -->
+            <div class="card">
+                <h1>和局</h1>
+                <div class="t_info">
+                    <div class="lt">
+                        <div class="team_name">
+                            <p><span>曼聯</span>[<span>主</span>]</p>
+                        </div>
+                        <div class="score">
+                            <p><span>1球</span></p>
+                        </div>
+                        <div class="percentage red">
+                            <span>0.910</span>
+                        </div>
+                    </div>
+                    <div class="middle_vs_area">
+                        <div class="icon_left"></div>
+                        <div class="vs_text">
+                            <p>VS</p>
+                        </div>
+                        <div class="icon_right"></div>
+                    </div>
+                    <div class="right_team">
+                        <div class="team_name">
+                            <p><span>阿仙奴</span></p>
+                        </div>
+                        <div class="score">
+                            <p><span></span>-</p>
+                        </div>
+                        <div class="percentage red">
+                            <span>0.970</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card_money_info_area">
+                    <p>投注本金<span>1000</span>元</p>
+                </div>
+
+                <div class="card_bingo_area">
+                    <div class="bingo_team_left">
+                        <div class="team_name">
+                            <p>投注主隊</p>
+                        </div>
+                        <div class="bingo_money red"><span>退回本金</span><span></span><span></span></div>
+                    </div>
+
+                    <div class="bingo_middle_area">
+                        <div class="bingo_middle_info">
+                            <div></div>
+                            <div class="">賽果</div>
+                            <div class="bingo_score"><span>1</span> - <span>0</span></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="bingo_team_right">
+                        <div class="team_name">
+                            <p>投注客隊</p>
+                        </div>
+                        <div class="bingo_money"><span>退回本金</span><span></span><span></span></div>
+                    </div>
+
+
+                </div>
             </div>
+
+            <!-- 全贏全輸 -->
             <div class="card">
                 <h1>全贏/全輸</h1>
-                <div class="card_content_area">
-                    <div class="left_team">
+                <div class="t_info">
+                    <div class="lt">
                         <div class="team_name">
                             <p><span>皇家馬德里</span>[<span>主</span>]</p>
                         </div>
                         <div class="score">
                             <p><span>1球半</span>/<span>2球</span></p>
                         </div>
-                        <div class="percentage">
-                            <span>0.910</span>
+                        <div class="percentage red">
+                            <span>0.920</span>
                         </div>
                     </div>
                     <div class="middle_vs_area">
@@ -147,19 +218,55 @@
                             <p><span>巴塞隆納</span></p>
                         </div>
                         <div class="score">
-                            <p><span>1</span>球</p>
+                            <p><span></span>-</p>
                         </div>
-                        <div class="percentage">
+                        <div class="percentage red">
                             <span>0.910</span>
                         </div>
                     </div>
                 </div>
 
+                <div class="card_money_info_area">
+                    <p>投注本金<span>1000</span>元</p>
+                </div>
+
+                <div class="card_bingo_area">
+                    <div class="bingo_team_left">
+                        <div class="team_name">
+                            <p>投注主隊</p>
+                        </div>
+                        <div class="bingo_money red"><span>贏</span><span>920</span><span>元</span></div>
+                    </div>
+
+                    <div class="bingo_middle_area">
+                        <div class="bingo_middle_info">
+                            <div></div>
+                            <div class="">賽果</div>
+                            <div class="bingo_score"><span>3</span> - <span>0</span></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="bingo_team_right">
+                        <div class="team_name">
+                            <p>投注客隊</p>
+                        </div>
+                        <div class="bingo_money"><span>輸本金</span><span>1000</span><span>元</span></div>
+                    </div>
+
+
+                </div>
+
+                <div class="card_win_money_info_area">
+                    <p>投注本金<span>1000</span>元</p>
+                    <p>(不含本金)</p>
+                </div>
             </div>
 
         </div>
     </aside>
 
+    <!-- footer -->
     <footer>
         <ul>
             <li class="index "><span></span>
