@@ -6323,7 +6323,6 @@ header.live_page.live_page .game_type span {
 aside.set_pw {
   width: 100%;
   margin: 0.625rem 0 0 0;
-  position: fixed;
   top: 0;
 }
 aside.set_pw ul {
