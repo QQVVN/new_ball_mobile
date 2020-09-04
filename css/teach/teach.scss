@@ -32,6 +32,7 @@ aside {
       }
     }
     .nav {
+      position: relative;
       overflow-x: scroll;
       background: #fff;
       white-space: nowrap;
@@ -45,6 +46,7 @@ aside {
         width: 5rem;
         line-height: 2.1875rem;
         border-radius: 1.125rem;
+        background-color: #fff;
 
         @for $i from 1 to 4 {
           .teach_ball_icon_#{$i} {
@@ -71,7 +73,7 @@ aside {
           position: sticky;
           left: 0;
           right: 0;
-          z-index: 1;
+          z-index: 5;
 
           @for $i from 1 to 4 {
             .teach_ball_icon_#{$i} {
@@ -119,6 +121,58 @@ aside {
             border-radius: 8px;
           }
         }
+
+        // new_create
+        .card_content_area {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          padding: 1.875rem .5rem;
+          font-weight: bold;
+          color: #4d515d;
+          font-family: "my_font";
+          .left_team,
+          .right_team {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .team_name {
+              display: flex;
+            }
+            .score {
+              font-size: .8rem;
+            }
+          }
+          .middle_vs_area {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 1rem 1.5rem 0;
+            .icon_left {
+              background: url(../images/teach/confrontation.png) no-repeat;
+              background-size: 200%;
+              background-position: 0 0;
+              width: 2.625rem;
+              height: 2.375rem;
+            }
+            .vs_text {
+              margin: 0.5rem 1rem;
+              color: #838ba0;
+              font-weight: normal;
+            }
+            .icon_right {
+              background: url(../images/teach/confrontation.png) no-repeat;
+              background-size: 200%;
+              background-position: -2.625rem 0;
+              width: 2.625rem;
+              height: 2.375rem;
+            }
+          }
+          .right_team {
+            text-align: center;
+          }
+        }
+
         .vs_area {
           position: relative;
           padding: 1.875rem 2.1875rem 0 2.1875rem;
@@ -145,6 +199,11 @@ aside {
                 margin: 0 0 0 0.625rem;
                 display: inline-block;
                 vertical-align: top;
+                span {
+                  &.vs_area_red {
+                    color: #f30d0d;
+                  }
+                }
               }
             }
             .name {
@@ -155,6 +214,10 @@ aside {
                 &:first-child {
                   font-weight: bold;
                   padding: 0 0 0.3125rem 0;
+                }
+                &:nth-child(2) {
+                  margin-top: 0.25rem;
+                  margin-bottom: 0.5rem;
                 }
               }
             }
@@ -177,6 +240,22 @@ aside {
               display: inline-block;
             }
           }
+          .icon {
+            background: url(../images/teach/confrontation.png) no-repeat;
+            background-size: 200%;
+            background-position: 0 0;
+            vertical-align: top;
+            display: inline-block;
+            width: 2.625rem;
+            height: 2.375rem;
+          }
+          .icon_o {
+            background: url(../images/teach/confrontation.png) no-repeat;
+            background-size: 200%;
+            background-position: -2.625rem 0;
+            vertical-align: top;
+            display: inline-block;
+          }
           .vs_mid_area {
             position: absolute;
             left: 50%;
@@ -191,8 +270,8 @@ aside {
               }
               &:last-child {
                 color: #556de7;
-                font-size: 0.875rem;
-                margin-top: 1rem;
+                font-size: 2rem;
+                margin: 1rem 0;
               }
             }
           }
@@ -202,7 +281,8 @@ aside {
             text-align: center;
             font-weight: bold;
             color: #4a5ec5;
-            padding: 1.875rem 0 0 0;
+            // padding: 1rem 0 0 0;
+            font-size: 0.95rem;
           }
         }
         .bingo_area {
@@ -211,9 +291,10 @@ aside {
           height: 5rem;
           line-height: 5rem;
           margin: 1.25rem 0 0 0;
+          padding: 0 1.25rem;
           .bingo_bot {
             border-radius: 3.125rem;
-            padding: 0.375rem 0 0.375rem 0;
+            padding: 0.375rem 1rem;
             overflow: hidden;
             line-height: 4.375rem;
             height: 4.375rem;
