@@ -7,14 +7,14 @@
     <!--RWD-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--main.css-->
-      <link rel="stylesheet" href="../../css/main.css">
+    <!--main.css-->
+    <link rel="stylesheet" href="../../css/main.css">
 
     <!-- jquery -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-   
+
 
     <title>Ready</title>
 </head>
@@ -25,14 +25,166 @@
         <li class="title">盤口教程</li>
     </ul>
 </header>
+
 <body>
     <aside class="teach">
+
+        <div class="nav">
+            <!-- tbi= teach_ball_icon -->
+            <!-- nbt = nav_ball_type -->
+            <div><span class="tbi_1"></span><span class="nbt">足球</span></div>
+            <div><span class="tbi_2"></span><span class="nbt">籃球</span></div>
+            <div><span class="tbi_3"></span><span class="nbt">棒球</span></div>
+        </div>
+
         <div class="title">
             <div>讓球<a href="./teach.html"></a></div>
             <div class="active">大小球</div>
         </div>
-     
-        <div class="content teach_bs">
+        <div class="content">
+            <!-- 全贏/全輸 -->
+            <div class="card">
+                <h1>全贏/全輸</h1>
+                <div class="t_info">
+                    <!-- ltl = left_team_long -->
+                    <div class="ltl">
+                        <div class="tn">
+                            <p><span>皇家馬德里<br>[主]</p>
+                        </div>
+                    </div>
+                    <!-- mva = middle_vs_area -->
+                    <div class="mva">
+                        <!-- il = icon_left -->
+                        <div class="il"></div>
+                        <!-- vt = vs_text -->
+                        <div class="vt">
+                            <p>VS</p>
+                        </div>
+                        <!-- ir = icon_right -->
+                        <div class="ir"></div>
+                    </div>
+                    <div class="rt">
+                        <div class="tnr">
+                            <p><span>巴塞隆納</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- pi = percent_info -->
+                <div class="pi">
+                    <p>2.5大<span>0.960</span><span>|</span>2.5小<span>0.880</span></p>
+                </div>
+                <!-- cmia = card_money_info_area -->
+                <div class="cmia">
+                    <p>投注本金1000元</p>
+                </div>
+                <!-- cra = card_result_area -->
+                <div class="cra">
+                    <!-- rtl = result_team_left -->
+                    <div class="rtl">
+                        <!-- tn = team_name -->
+                        <div class="tn">
+                            <p>投注2.5大</p>
+                        </div>
+                        <!-- rm = result_money -->
+                        <div class="rm red"><span>贏960元</div>
+                    </div>
+                    <!-- rma = result_middle_area -->
+                    <div class="rma">
+                        <!-- rmi = result_middle_info -->
+                        <div class="rmi">
+                            <div></div>
+                            <div class="">賽果</div>
+                            <!-- rs = result_score -->
+                            <div class="rs"><span>1</span> - <span>2</span></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <!-- rtr = result_team_right -->
+                    <div class="rtr">
+                        <!-- tn = team_name -->
+                        <div class="tn">
+                            <p>投注2.5小</p>
+                        </div>
+                        <!-- rml = result_money_long -->
+                        <div class="rml"><span>輸本金1000</span></div>
+                    </div>
+                </div>
+                <!-- example_left -->
+                <div class="exl">
+                    <p>贏1000 x (0.960) = 960<br>(不含本金)</p>
+                    <p></p>
+                </div>
+            </div>
+            <!-- 和局 -->
+            <div class="card">
+                <h1>和局</h1>
+                <div class="t_info">
+                    <!-- ltl = left_team_long -->
+                    <div class="ltl">
+                        <div class="tn">
+                            <p><span>皇家馬德里<br>[主]</p>
+                        </div>
+                    </div>
+                    <!-- mva = middle_vs_area -->
+                    <div class="mva">
+                        <!-- il = icon_left -->
+                        <div class="il"></div>
+                        <!-- vt = vs_text -->
+                        <div class="vt">
+                            <p>VS</p>
+                        </div>
+                        <!-- ir = icon_right -->
+                        <div class="ir"></div>
+                    </div>
+                    <div class="rt">
+                        <div class="tnr">
+                            <p><span>巴塞隆納</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- pi = percent_info -->
+                <div class="pi">
+                    <p>3平大<span>0.900</span><span>|</span>3平小<span>0.900</span></p>
+                </div>
+                <!-- cmia = card_money_info_area -->
+                <div class="cmia">
+                    <p>投注本金1000元</p>
+                </div>
+                <!-- cra = card_result_area -->
+                <div class="cra">
+                    <!-- rtl = result_team_left -->
+                    <div class="rtl">
+                        <!-- tn = team_name -->
+                        <div class="tn">
+                            <p>投注3平大</p>
+                        </div>
+                        <!-- rm = result_money -->
+                        <div class="rm"><span>退回本金</div>
+                    </div>
+                    <!-- rma = result_middle_area -->
+                    <div class="rma">
+                        <!-- rmi = result_middle_info -->
+                        <div class="rmi">
+                            <div></div>
+                            <div class="">賽果</div>
+                            <!-- rs = result_score -->
+                            <div class="rs"><span>2</span> - <span>1</span></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <!-- rtr = result_team_right -->
+                    <div class="rtr">
+                        <!-- tn = team_name -->
+                        <div class="tn">
+                            <p>投注3平小</p>
+                        </div>
+                        <!-- rml = result_money_long -->
+                        <div class="rml"><span>退回本金</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="content teach_bs">
             <div class="card">
                 <h1>大小球 <p>全場90分鐘(含傷停捕時)兩隊進球數的總和</p></h1>
                 <div class="vs_area">
@@ -169,8 +321,7 @@
                 </div>
                 
             </div>
-
-        </div>
+        </div> -->
     </aside>
     <footer>
         <ul>
@@ -186,7 +337,7 @@
                 <p>客服</p>
                 <a href="../help/help.html"></a>
             </li>
-            
+
             <li class="event"><span></span>
                 <p>投注紀錄</p>
                 <a href="../my/bet_record/my_bet_record_fast.html"></a>
@@ -196,7 +347,7 @@
                 <a href="../my/my.html"></a>
             </li>
         </ul>
-      </footer>
+    </footer>
 
 </body>
 
