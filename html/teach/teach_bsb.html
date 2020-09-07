@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--RWD-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--main.css-->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+    <title>Ready</title>
+</head>
+
+<header>
+    <ul>
+        <li class="back"><a href="javascript:history.back()"></a></li>
+        <li class="title">盤口教程</li>
+    </ul>
+</header>
+
+<body>
+    <aside class="teach">
+        <!-- nav -->
+        <div class="nav">
+            <!-- tbi= teach_ball_icon -->
+            <!-- nbt = nav_ball_type -->
+            <div><span class="tbi_1"></span><span class="nbt">足球</span><a href="./teach.html"></a></div>
+            <div><span class="tbi_2"></span><span class="nbt">籃球</span><a href="./teach_bkb.html"></a></div>
+            <div class="active"><span class="tbi_3"></span><span class="nbt">棒球</span></div>
+        </div>
+        <!-- title -->
+        <div class="title">
+            <div class="active">讓球</a></div>
+            <div>大小球<a href="./teach_bsb_bs.html"></a></div>
+        </div>
+
+        <div class="content">
+            <!-- 和局 -->
+            <div class="card">
+                <h1>和局</h1>
+                <div class="t_info">
+                    <div class="lt">
+                        <div class="tn">
+                            <p><span>紅襪</span>[<span>主</span>]</p>
+                        </div>
+                        <!-- s = score -->
+                        <div class="s">
+                            <p><span>1平</span></p>
+                        </div>
+                        <!-- per = percent -->
+                        <div class="per red">
+                            <span>0.940</span>
+                        </div>
+                    </div>
+                    <!-- mva = middle_vs_area -->
+                    <div class="mva">
+                        <!-- il = icon_left -->
+                        <div class="il"></div>
+                        <!-- vt = vs_text -->
+                        <div class="vt">
+                            <p>VS</p>
+                        </div>
+                        <!-- ir = icon_right -->
+                        <div class="ir"></div>
+                    </div>
+                    <div class="rt">
+                        <div class="tn">
+                            <p><span>天使</span></p>
+                        </div>
+                        <div class="s">
+                            <p><span></span>-</p>
+                        </div>
+                        <div class="per red">
+                            <span>0.940</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- cmia = card_money_info_area -->
+                <div class="cmia">
+                    <p>投注本金<span>1000</span>元</p>
+                </div>
+                <!-- cra = card_result_area -->
+                <div class="cra">
+                    <!-- rtl = result_team_left -->
+                    <div class="rtl">
+                        <!-- tn = team_name -->
+                        <div class="tn">
+                            <p>投注主隊</p>
+                        </div>
+                        <!-- rm = result_money -->
+                        <div class="rm red"><span>退回本金</span><span></span><span></span></div>
+                    </div>
+                    <!-- rma = result_middle_area -->
+                    <div class="rma">
+                        <!-- rmi = result_middle_info -->
+                        <div class="rmi">
+                            <div></div>
+                            <div class="">賽果</div>
+                            <!-- rs = result_score -->
+                            <div class="rs"><span>4</span> - <span>3</span></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <!-- rtr = result_team_right -->
+                    <div class="rtr">
+                        <!-- tn = team_name -->
+                        <div class="tn">
+                            <p>投注客隊</p>
+                        </div>
+                        <!-- rm = result_money -->
+                        <div class="rm red"><span>退回本金</span><span></span><span></span></div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- 全贏/全輸 -->
+            <div class="card">
+                <h1>全贏/全輸</h1>
+                <div class="t_info">
+                    <!-- ltl = left_team_long -->
+                    <div class="lt">
+                        <div class="tn">
+                            <p><span>紅襪</span>[<span>主</span>]</p>
+                        </div>
+                        <!-- s = score -->
+                        <div class="s">
+                            <p><span>平手</span></p>
+                        </div>
+                        <!-- per = percent -->
+                        <div class="per red">
+                            <span>0.940</span>
+                        </div>
+                    </div>
+                    <!-- mva = middle_vs_area -->
+                    <div class="mva">
+                        <!-- il = icon_left -->
+                        <div class="il"></div>
+                        <!-- vt = vs_text -->
+                        <div class="vt">
+                            <p>VS</p>
+                        </div>
+                        <!-- ir = icon_right -->
+                        <div class="ir"></div>
+                    </div>
+                    <div class="rt">
+                        <div class="tn">
+                            <p><span>天使</span></p>
+                        </div>
+                        <div class="s">
+                            <p><span></span>-</p>
+                        </div>
+                        <div class="per red">
+                            <span>0.940</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- cmia = card_money_info_area -->
+                <div class="cmia">
+                    <p>投注本金1000元</p>
+                </div>
+                <!-- cra = card_result_area -->
+                <div class="cra">
+                    <!-- rtl = result_team_left -->
+                    <div class="rtl">
+                        <!-- tn = team_name -->
+                        <div class="tn">
+                            <p>投注主隊</p>
+                        </div>
+                        <!-- rm = result_money -->
+                        <div class="rm red"><span>贏940元</div>
+                    </div>
+                    <!-- rma = result_middle_area -->
+                    <div class="rma">
+                        <!-- rmi = result_middle_info -->
+                        <div class="rmi">
+                            <div></div>
+                            <div class="">賽果</div>
+                            <!-- rs = result_score -->
+                            <div class="rs"><span>6</span> - <span>3</span></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <!-- rtr = result_team_right -->
+                    <div class="rtr">
+                        <!-- tn = team_name -->
+                        <div class="tn">
+                            <p>投注客隊</p>
+                        </div>
+                        <!-- rml = result_money_long -->
+                        <div class="rml"><span>輸本金1000</span></div>
+                    </div>
+                </div>
+                <!-- example_left -->
+                <div class="exl">
+                    <p>贏1000 x (0.940) = 940<br>(不含本金)</p>
+                    <p>輸1000 x -1 =-1000</p>
+                </div>
+            </div>
+            <!-- 贏一半/輸一半 -->
+            <div class="card">
+                <h1>贏一半/輸一半</h1>
+                <div class="t_info">
+                    <!-- ltl = left_team_long -->
+                    <div class="lt">
+                        <div class="tn">
+                            <p><span>藍鳥</span>[<span>主</span>]</p>
+                        </div>
+                        <!-- s = score -->
+                        <div class="s">
+                            <p><span>2+50</span></p>
+                        </div>
+                        <!-- per = percent -->
+                        <div class="per red">
+                            <span>0.940</span>
+                        </div>
+                    </div>
+                    <!-- mva = middle_vs_area -->
+                    <div class="mva">
+                        <!-- il = icon_left -->
+                        <div class="il"></div>
+                        <!-- vt = vs_text -->
+                        <div class="vt">
+                            <p>VS</p>
+                        </div>
+                        <!-- ir = icon_right -->
+                        <div class="ir"></div>
+                    </div>
+                    <div class="rt">
+                        <div class="tn">
+                            <p><span>水手</span></p>
+                        </div>
+                        <div class="s">
+                            <p><span></span>-</p>
+                        </div>
+                        <div class="per red">
+                            <span>0.940</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- cmia = card_money_info_area -->
+                <div class="cmia">
+                    <p>投注本金1000元</p>
+                </div>
+                <!-- cra = card_result_area -->
+                <div class="cra">
+                    <!-- rtl = result_team_left -->
+                    <div class="rtl">
+                        <!-- tn = team_name -->
+                        <div class="tn">
+                            <p>投注主隊</p>
+                        </div>
+                        <!-- rm = result_money -->
+                        <div class="rm red"><span>贏470元</div>
+                    </div>
+                    <!-- rma = result_middle_area -->
+                    <div class="rma">
+                        <!-- rmi = result_middle_info -->
+                        <div class="rmi">
+                            <div></div>
+                            <div class="">賽果</div>
+                            <!-- rs = result_score -->
+                            <div class="rs"><span>6</span> - <span>4</span></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <!-- rtr = result_team_right -->
+                    <div class="rtr">
+                        <!-- tn = team_name -->
+                        <div class="tn">
+                            <p>投注客隊</p>
+                        </div>
+                        <!-- rml = result_money_long -->
+                        <div class="rml"><span>輸500元</span></div>
+                    </div>
+                </div>
+                <!-- example_left -->
+                <div class="exl">
+                    <p>贏分洞<br>1000 x 0.940 x 50% =470<br>(不含本金)</p>
+                    <p>輸分洞<br>1000 x -1 x 50%=-500</p>
+                </div>
+            </div>
+    </aside>
+
+    <!-- footer -->
+    <footer>
+        <ul>
+            <li class="index "><span></span>
+                <p>首頁</p>
+                <a href="../../index.html"></a>
+            </li>
+            <li class="donate"><span></span>
+                <p>賽事結果</p>
+                <a href="../my/my_game_result/my_game_result.html"></a>
+            </li>
+            <li class="help"><span></span>
+                <p>客服</p>
+                <a href="../help/help.html"></a>
+            </li>
+
+            <li class="event"><span></span>
+                <p>投注紀錄</p>
+                <a href="../my/bet_record/my_bet_record_fast.html"></a>
+            </li>
+            <li class="my have active"><span></span>
+                <p>我的</p>
+                <a href="../my/my.html"></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="/js/teach/teach_all.js"></script>
+</body>
+
+</html>

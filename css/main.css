@@ -10724,8 +10724,12 @@ aside.teach .title div {
   border-bottom: 0.2rem solid transparent;
   position: relative;
 }
+aside.teach .title div:first-child {
+  margin-left: -0.4rem;
+}
 aside.teach .title div:last-child {
   float: right;
+  margin-right: -0.4rem;
 }
 aside.teach .title div.active, aside.teach .title div:hover, aside.teach .title div.hover {
   color: #4d515d;
@@ -10859,7 +10863,8 @@ aside.teach .content .card .t_info .rt {
   flex-direction: column;
   justify-content: space-around;
 }
-aside.teach .content .card .t_info .lt .tn p, aside.teach .content .card .t_info .lt .tnr p,
+aside.teach .content .card .t_info .lt .tn p,
+aside.teach .content .card .t_info .lt .tnr p,
 aside.teach .content .card .t_info .ltl .tn p,
 aside.teach .content .card .t_info .ltl .tnr p,
 aside.teach .content .card .t_info .rt .tn p,
@@ -10939,6 +10944,7 @@ aside.teach .content .card .cra {
 aside.teach .content .card .cra .rtl .tn,
 aside.teach .content .card .cra .rtr .tn {
   color: #838ba0;
+  margin-bottom: 0.25rem;
 }
 aside.teach .content .card .cra .rtl .rm,
 aside.teach .content .card .cra .rtl .rml,
@@ -11538,6 +11544,27 @@ aside.teach .content.teach_bs .card .button_wrap button.blue_arrow:after {
   background-size: 100%;
   background-position: center;
   margin: 0 -0.5rem 0 0.5rem;
+}
+
+aside.teach .content .card .t_info .lt .tn.bkbsl {
+  margin-top: 0.6rem;
+  margin-left: 1rem;
+}
+aside.teach .content .card .t_info .rt .tnr.bkbsr {
+  margin-top: -0.5rem;
+  margin-left: -1rem;
+}
+aside.teach .content .card .pi {
+  margin-top: -2rem;
+}
+aside.teach .content .card .cra .rtl .tn.bkbs {
+  margin-left: 2rem;
+}
+aside.teach .content .card .cra .rtl .tn .p_bkbs {
+  margin-left: -3rem;
+}
+aside.teach .content .card .cra .rtr .tn.bkbs, aside.teach .content .card .cra .rtr .rml.bkbs {
+  margin-right: -1rem;
 }
 
 body.dk {

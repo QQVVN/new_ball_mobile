@@ -20,8 +20,12 @@ aside {
         text-align: center;
         border-bottom: 0.2rem solid transparent;
         position: relative;
+        &:first-child {
+          margin-left: -0.4rem;
+        }
         &:last-child {
           float: right;
+          margin-right: -0.4rem;
         }
         &.active,
         &:hover,
@@ -146,7 +150,8 @@ aside {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            .tn,.tnr {
+            .tn,
+            .tnr {
               p {
                 font-size: 0.848rem;
               }
@@ -221,6 +226,7 @@ aside {
           .rtr {
             .tn {
               color: #838ba0;
+              margin-bottom: 0.25rem;
             }
             .rm,
             .rml {
