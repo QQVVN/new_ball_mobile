@@ -16,9 +16,9 @@ aside {
         color: #838ba0;
         display: inline-block;
         line-height: 40px;
-        width: 5rem;
+        width: 7rem;
         text-align: center;
-        border-bottom: 0.125rem solid transparent;
+        border-bottom: 0.2rem solid transparent;
         position: relative;
         &:last-child {
           float: right;
@@ -27,10 +27,13 @@ aside {
         &:hover,
         &.hover {
           color: #4d515d;
-          border-bottom: 0.125rem solid #7c87bc;
+          border-bottom: 0.2rem solid #7c87bc;
+          font-weight: bold;
         }
       }
     }
+
+    
     .nav {
       position: relative;
       // overflow-x: scroll;
@@ -39,7 +42,7 @@ aside {
       white-space: nowrap;
       padding: 0.5rem calc(0.6875rem + 0.625rem);
       box-shadow: 0px 1px 0.1875rem 2px #e7e7e7;
-      margin-top: -.3rem;
+      margin-top: -0.3rem;
 
       div {
         display: inline-block;
@@ -50,13 +53,12 @@ aside {
         border-radius: 1.125rem;
         background-color: #fff;
         &:nth-child(2) {
-          margin: 0 2rem;
+          margin: 0 1.5rem;
         }
-      
 
         @for $i from 1 to 4 {
-          .teach_ball_icon_#{$i} {
-            background: url("/images/teach/teach_ball_all.png") no-repeat;
+          .tbi_#{$i} {
+            background: url(../images/teach/teach_ball_all.png) no-repeat;
             background-size: 300%;
             width: 1.25rem;
             height: 1.25rem;
@@ -65,7 +67,7 @@ aside {
             background-position-x: ($i - 1) * -1.25rem;
           }
         }
-        .nav_ball_type {
+        .nbt {
           vertical-align: middle;
           margin-left: 0.25rem;
           line-height: 100%;
@@ -82,7 +84,7 @@ aside {
           z-index: 5;
 
           @for $i from 1 to 4 {
-            .teach_ball_icon_#{$i} {
+            .tbi_#{$i} {
               background-position-y: -1.25rem;
             }
           }
@@ -148,35 +150,40 @@ aside {
                 font-size: 0.848rem;
               }
             }
-            .score {
+            .s {
               font-size: 0.8rem;
             }
-            .percent {
+            .per {
               font-weight: normal;
             }
             .red {
               color: #f30d0d;
             }
           }
+          .lt {
+            margin-left: 1rem;
+          }
+          .rt {
+            margin-right: 1rem;
+          }
 
-          .middle_vs_area {
+          .mva {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            margin: 0.25rem 1.5rem 0;
-            .icon_left {
+            .il {
               background: url(../images/teach/confrontation.png) no-repeat;
               background-size: 200%;
               background-position: 0 0;
               width: 2.625rem;
               height: 2.375rem;
             }
-            .vs_text {
-              margin: 0.5rem 1rem;
+            .vt {
+              margin: 0.5rem 2.5rem;
               color: #838ba0;
               font-weight: normal;
             }
-            .icon_right {
+            .ir {
               background: url(../images/teach/confrontation.png) no-repeat;
               background-size: 200%;
               background-position: -2.625rem 0;
@@ -184,18 +191,18 @@ aside {
               height: 2.375rem;
             }
           }
-          .right_team {
+          .rt {
             text-align: center;
           }
         }
-        .card_money_info_area {
+        .cmia {
           text-align: center;
           font-weight: bold;
           color: #4a5ec5;
           font-size: 0.95rem;
           margin-top: -2rem;
         }
-        .card_bingo_area {
+        .cra {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           text-align: center;
@@ -204,21 +211,28 @@ aside {
           margin: 1rem 1rem 0;
           border-radius: 3rem;
           color: #4d515d;
-          .bingo_team_left,
-          .bingo_team_right {
-            .team_name {
+          .rtl,
+          .rtr {
+            .tn {
               color: #838ba0;
             }
-            .bingo_money {
+            .rm {
               font-weight: bold;
               &.red {
                 color: #f30d0d;
               }
             }
           }
-          .bingo_middle_area {
+          .rtl {
+            margin-left: 2rem;
+          }
+          .rtr {
+            margin-right: 2rem;
+          }
+
+          .rma {
             position: relative;
-            .bingo_middle_info {
+            .rmi {
               display: grid;
               grid-template-rows: repeat(4, 1fr);
               position: absolute;
@@ -234,16 +248,13 @@ aside {
               div {
                 height: 1rem;
               }
-              .bingo_score {
+              .rs {
                 color: #4a5ec5;
                 font-size: 1.5rem;
                 margin-top: -0.4rem;
               }
             }
           }
-        }
-        .card_win_money_info_area {
-          padding: 1rem;
         }
 
         // new create end

@@ -10719,9 +10719,9 @@ aside.teach .title div {
   color: #838ba0;
   display: inline-block;
   line-height: 40px;
-  width: 5rem;
+  width: 7rem;
   text-align: center;
-  border-bottom: 0.125rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
   position: relative;
 }
 aside.teach .title div:last-child {
@@ -10729,7 +10729,8 @@ aside.teach .title div:last-child {
 }
 aside.teach .title div.active, aside.teach .title div:hover, aside.teach .title div.hover {
   color: #4d515d;
-  border-bottom: 0.125rem solid #7c87bc;
+  border-bottom: 0.2rem solid #7c87bc;
+  font-weight: bold;
 }
 aside.teach .nav {
   position: relative;
@@ -10750,10 +10751,10 @@ aside.teach .nav div {
   background-color: #fff;
 }
 aside.teach .nav div:nth-child(2) {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
 }
-aside.teach .nav div .teach_ball_icon_1 {
-  background: url("/images/teach/teach_ball_all.png") no-repeat;
+aside.teach .nav div .tbi_1 {
+  background: url(../images/teach/teach_ball_all.png) no-repeat;
   background-size: 300%;
   width: 1.25rem;
   height: 1.25rem;
@@ -10761,8 +10762,8 @@ aside.teach .nav div .teach_ball_icon_1 {
   display: inline-block;
   background-position-x: 0rem;
 }
-aside.teach .nav div .teach_ball_icon_2 {
-  background: url("/images/teach/teach_ball_all.png") no-repeat;
+aside.teach .nav div .tbi_2 {
+  background: url(../images/teach/teach_ball_all.png) no-repeat;
   background-size: 300%;
   width: 1.25rem;
   height: 1.25rem;
@@ -10770,8 +10771,8 @@ aside.teach .nav div .teach_ball_icon_2 {
   display: inline-block;
   background-position-x: -1.25rem;
 }
-aside.teach .nav div .teach_ball_icon_3 {
-  background: url("/images/teach/teach_ball_all.png") no-repeat;
+aside.teach .nav div .tbi_3 {
+  background: url(../images/teach/teach_ball_all.png) no-repeat;
   background-size: 300%;
   width: 1.25rem;
   height: 1.25rem;
@@ -10779,7 +10780,7 @@ aside.teach .nav div .teach_ball_icon_3 {
   display: inline-block;
   background-position-x: -2.5rem;
 }
-aside.teach .nav div .nav_ball_type {
+aside.teach .nav div .nbt {
   vertical-align: middle;
   margin-left: 0.25rem;
   line-height: 100%;
@@ -10792,13 +10793,13 @@ aside.teach .nav div.active, aside.teach .nav div:hover, aside.teach .nav div:ac
   right: 0;
   z-index: 5;
 }
-aside.teach .nav div.active .teach_ball_icon_1, aside.teach .nav div:hover .teach_ball_icon_1, aside.teach .nav div:active .teach_ball_icon_1 {
+aside.teach .nav div.active .tbi_1, aside.teach .nav div:hover .tbi_1, aside.teach .nav div:active .tbi_1 {
   background-position-y: -1.25rem;
 }
-aside.teach .nav div.active .teach_ball_icon_2, aside.teach .nav div:hover .teach_ball_icon_2, aside.teach .nav div:active .teach_ball_icon_2 {
+aside.teach .nav div.active .tbi_2, aside.teach .nav div:hover .tbi_2, aside.teach .nav div:active .tbi_2 {
   background-position-y: -1.25rem;
 }
-aside.teach .nav div.active .teach_ball_icon_3, aside.teach .nav div:hover .teach_ball_icon_3, aside.teach .nav div:active .teach_ball_icon_3 {
+aside.teach .nav div.active .tbi_3, aside.teach .nav div:hover .tbi_3, aside.teach .nav div:active .tbi_3 {
   background-position-y: -1.25rem;
 }
 aside.teach .content {
@@ -10860,54 +10861,59 @@ aside.teach .content .card .t_info .lt .tn p,
 aside.teach .content .card .t_info .rt .tn p {
   font-size: 0.848rem;
 }
-aside.teach .content .card .t_info .lt .score,
-aside.teach .content .card .t_info .rt .score {
+aside.teach .content .card .t_info .lt .s,
+aside.teach .content .card .t_info .rt .s {
   font-size: 0.8rem;
 }
-aside.teach .content .card .t_info .lt .percent,
-aside.teach .content .card .t_info .rt .percent {
+aside.teach .content .card .t_info .lt .per,
+aside.teach .content .card .t_info .rt .per {
   font-weight: normal;
 }
 aside.teach .content .card .t_info .lt .red,
 aside.teach .content .card .t_info .rt .red {
   color: #f30d0d;
 }
-aside.teach .content .card .t_info .middle_vs_area {
+aside.teach .content .card .t_info .lt {
+  margin-left: 1rem;
+}
+aside.teach .content .card .t_info .rt {
+  margin-right: 1rem;
+}
+aside.teach .content .card .t_info .mva {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 0.25rem 1.5rem 0;
 }
-aside.teach .content .card .t_info .middle_vs_area .icon_left {
+aside.teach .content .card .t_info .mva .il {
   background: url(../images/teach/confrontation.png) no-repeat;
   background-size: 200%;
   background-position: 0 0;
   width: 2.625rem;
   height: 2.375rem;
 }
-aside.teach .content .card .t_info .middle_vs_area .vs_text {
-  margin: 0.5rem 1rem;
+aside.teach .content .card .t_info .mva .vt {
+  margin: 0.5rem 2.5rem;
   color: #838ba0;
   font-weight: normal;
 }
-aside.teach .content .card .t_info .middle_vs_area .icon_right {
+aside.teach .content .card .t_info .mva .ir {
   background: url(../images/teach/confrontation.png) no-repeat;
   background-size: 200%;
   background-position: -2.625rem 0;
   width: 2.625rem;
   height: 2.375rem;
 }
-aside.teach .content .card .t_info .right_team {
+aside.teach .content .card .t_info .rt {
   text-align: center;
 }
-aside.teach .content .card .card_money_info_area {
+aside.teach .content .card .cmia {
   text-align: center;
   font-weight: bold;
   color: #4a5ec5;
   font-size: 0.95rem;
   margin-top: -2rem;
 }
-aside.teach .content .card .card_bingo_area {
+aside.teach .content .card .cra {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
@@ -10917,22 +10923,28 @@ aside.teach .content .card .card_bingo_area {
   border-radius: 3rem;
   color: #4d515d;
 }
-aside.teach .content .card .card_bingo_area .bingo_team_left .team_name,
-aside.teach .content .card .card_bingo_area .bingo_team_right .team_name {
+aside.teach .content .card .cra .rtl .tn,
+aside.teach .content .card .cra .rtr .tn {
   color: #838ba0;
 }
-aside.teach .content .card .card_bingo_area .bingo_team_left .bingo_money,
-aside.teach .content .card .card_bingo_area .bingo_team_right .bingo_money {
+aside.teach .content .card .cra .rtl .rm,
+aside.teach .content .card .cra .rtr .rm {
   font-weight: bold;
 }
-aside.teach .content .card .card_bingo_area .bingo_team_left .bingo_money.red,
-aside.teach .content .card .card_bingo_area .bingo_team_right .bingo_money.red {
+aside.teach .content .card .cra .rtl .rm.red,
+aside.teach .content .card .cra .rtr .rm.red {
   color: #f30d0d;
 }
-aside.teach .content .card .card_bingo_area .bingo_middle_area {
+aside.teach .content .card .cra .rtl {
+  margin-left: 2rem;
+}
+aside.teach .content .card .cra .rtr {
+  margin-right: 2rem;
+}
+aside.teach .content .card .cra .rma {
   position: relative;
 }
-aside.teach .content .card .card_bingo_area .bingo_middle_area .bingo_middle_info {
+aside.teach .content .card .cra .rma .rmi {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   position: absolute;
@@ -10945,16 +10957,13 @@ aside.teach .content .card .card_bingo_area .bingo_middle_area .bingo_middle_inf
   width: 6rem;
   height: 6rem;
 }
-aside.teach .content .card .card_bingo_area .bingo_middle_area .bingo_middle_info div {
+aside.teach .content .card .cra .rma .rmi div {
   height: 1rem;
 }
-aside.teach .content .card .card_bingo_area .bingo_middle_area .bingo_middle_info .bingo_score {
+aside.teach .content .card .cra .rma .rmi .rs {
   color: #4a5ec5;
   font-size: 1.5rem;
   margin-top: -0.4rem;
-}
-aside.teach .content .card .card_win_money_info_area {
-  padding: 1rem;
 }
 aside.teach .content .card .vs_area {
   position: relative;
