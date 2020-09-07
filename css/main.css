@@ -10851,6 +10851,7 @@ aside.teach .content .card .t_info {
   font-family: "my_font";
 }
 aside.teach .content .card .t_info .lt,
+aside.teach .content .card .t_info .ltl,
 aside.teach .content .card .t_info .rt {
   text-align: center;
   display: flex;
@@ -10858,23 +10859,30 @@ aside.teach .content .card .t_info .rt {
   justify-content: space-around;
 }
 aside.teach .content .card .t_info .lt .tn p,
+aside.teach .content .card .t_info .ltl .tn p,
 aside.teach .content .card .t_info .rt .tn p {
   font-size: 0.848rem;
 }
 aside.teach .content .card .t_info .lt .s,
+aside.teach .content .card .t_info .ltl .s,
 aside.teach .content .card .t_info .rt .s {
   font-size: 0.8rem;
 }
 aside.teach .content .card .t_info .lt .per,
+aside.teach .content .card .t_info .ltl .per,
 aside.teach .content .card .t_info .rt .per {
   font-weight: normal;
 }
 aside.teach .content .card .t_info .lt .red,
+aside.teach .content .card .t_info .ltl .red,
 aside.teach .content .card .t_info .rt .red {
   color: #f30d0d;
 }
 aside.teach .content .card .t_info .lt {
   margin-left: 1rem;
+}
+aside.teach .content .card .t_info .ltl {
+  margin-left: -1rem;
 }
 aside.teach .content .card .t_info .rt {
   margin-right: 1rem;
@@ -10906,7 +10914,9 @@ aside.teach .content .card .t_info .mva .ir {
 aside.teach .content .card .t_info .rt {
   text-align: center;
 }
-aside.teach .content .card .cmia {
+aside.teach .content .card .cmia,
+aside.teach .content .card .exl,
+aside.teach .content .card .exr {
   text-align: center;
   font-weight: bold;
   color: #4a5ec5;
@@ -10928,12 +10938,20 @@ aside.teach .content .card .cra .rtr .tn {
   color: #838ba0;
 }
 aside.teach .content .card .cra .rtl .rm,
-aside.teach .content .card .cra .rtr .rm {
+aside.teach .content .card .cra .rtl .rml,
+aside.teach .content .card .cra .rtr .rm,
+aside.teach .content .card .cra .rtr .rml {
   font-weight: bold;
 }
 aside.teach .content .card .cra .rtl .rm.red,
-aside.teach .content .card .cra .rtr .rm.red {
+aside.teach .content .card .cra .rtl .rml.red,
+aside.teach .content .card .cra .rtr .rm.red,
+aside.teach .content .card .cra .rtr .rml.red {
   color: #f30d0d;
+}
+aside.teach .content .card .cra .rtl .rml,
+aside.teach .content .card .cra .rtr .rml {
+  font-size: 0.9rem;
 }
 aside.teach .content .card .cra .rtl {
   margin-left: 2rem;
@@ -10964,6 +10982,16 @@ aside.teach .content .card .cra .rma .rmi .rs {
   color: #4a5ec5;
   font-size: 1.5rem;
   margin-top: -0.4rem;
+}
+aside.teach .content .card .exl,
+aside.teach .content .card .exr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+}
+aside.teach .content .card .exl p:nth-child(2) {
+  color: #4d515d;
 }
 aside.teach .content .card .vs_area {
   position: relative;

@@ -33,7 +33,6 @@ aside {
       }
     }
 
-    
     .nav {
       position: relative;
       // overflow-x: scroll;
@@ -140,6 +139,7 @@ aside {
           color: #4d515d;
           font-family: "my_font";
           .lt,
+          .ltl,
           .rt {
             text-align: center;
             display: flex;
@@ -162,6 +162,9 @@ aside {
           }
           .lt {
             margin-left: 1rem;
+          }
+          .ltl {
+            margin-left: -1rem;
           }
           .rt {
             margin-right: 1rem;
@@ -195,7 +198,9 @@ aside {
             text-align: center;
           }
         }
-        .cmia {
+        .cmia,
+        .exl,
+        .exr {
           text-align: center;
           font-weight: bold;
           color: #4a5ec5;
@@ -216,11 +221,15 @@ aside {
             .tn {
               color: #838ba0;
             }
-            .rm {
+            .rm,
+            .rml {
               font-weight: bold;
               &.red {
                 color: #f30d0d;
               }
+            }
+            .rml {
+              font-size: 0.9rem;
             }
           }
           .rtl {
@@ -253,6 +262,20 @@ aside {
                 font-size: 1.5rem;
                 margin-top: -0.4rem;
               }
+            }
+          }
+        }
+        .exl,
+        .exr {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin-top: 1.25rem;
+          margin-bottom: 2rem;
+        }
+        .exl {
+          p {
+            &:nth-child(2) {
+              color: #4d515d;
             }
           }
         }
