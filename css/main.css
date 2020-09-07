@@ -10850,12 +10850,12 @@ aside.teach .content .card h1:before {
 aside.teach .content .card .container {
   font-weight: bold;
   font-family: Microsoft JhengHei;
+  width: 100%;
 }
 aside.teach .content .card .container .t_info {
   display: inline-block;
   text-align: center;
-  margin-top: 2.5rem;
-  margin-left: 1.25rem;
+  margin: 0 auto;
 }
 aside.teach .content .card .container .t_info .lt,
 aside.teach .content .card .container .t_info .rt,

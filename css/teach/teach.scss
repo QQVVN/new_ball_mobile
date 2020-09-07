@@ -138,11 +138,13 @@ aside {
         .container {
           font-weight: bold;
           font-family: Microsoft JhengHei;
+          width: 100%;
           .t_info {
             display: inline-block;
             text-align: center;
-            margin-top: 2.5rem;
-            margin-left: 1.25rem;
+            margin: 0 auto;
+            // margin-top: 2.5rem;
+            // margin-left: 1.25rem;
             .lt,
             .rt,
             .mva {
