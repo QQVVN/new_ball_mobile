@@ -1,217 +1,52 @@
 aside {
   &.teach {
     .content {
-      height: calc(100vh - (6.625rem + 3.5rem + 2.625rem));
-      overflow-y: scroll;
-      padding: 0 0 6.25rem 0;
       .card {
-        background: #fff;
-        padding: 0 0.6875rem 3.125rem 0.6875rem;
-        &:first-child {
-          margin: 0.625rem 0 0 0;
-        }
-        h1 {
-          color: #4d515d;
-          padding: 0.9375rem 0 0.9375rem 0.75rem;
-          border-bottom: 1px solid #e0e3f3;
-          position: relative;
-          line-height: 1.5rem;
-          white-space: nowrap;
-          p {
-            display: inline-block;
-            color: #838ba0;
-            font-size: 0.8125rem;
-            font-weight: lighter;
-            line-height: 1;
-            vertical-align: middle;
-            margin: 0 0 0 0.3125rem;
-          }
-          &:before {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            content: "";
-            width: 0.25rem;
-            height: 1.0625rem;
-            background: #b5c1ff;
-            border-radius: 8px;
-          }
-        }
         // new_create
-
         .t_info {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          padding: 1.875rem 0.5rem;
-          font-weight: bold;
-          color: #4d515d;
-          font-family: "my_font";
-          .lt,
-          .ltl,
-          .rt {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            .tn,.tnr {
-              p {
-                font-size: 0.848rem;
+          .ltl {
+            .tn {
+              &.tn_bs {
+                margin-top: 0.6rem;
+                margin-left: 1.5rem;
               }
             }
-            .tn {
-              margin-top: .5rem;
-            }
+          }
+          .rt {
             .tnr {
-              margin-top: -.9rem;
+              &.tnr_bs {
+                margin-top: -1rem;
+                // margin-left: .5rem;
+              }
             }
-            .s {
-              font-size: 0.8rem;
-            }
-            .per {
-              font-weight: normal;
-            }
-            .red {
-              color: #f30d0d;
-            }
-          }
-          .lt {
-            margin-left: 1rem;
-          }
-          .ltl {
-            margin-left: -1rem;
-          }
-          .rt {
-            margin-right: 1rem;
-          }
-
-          .mva {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            .il {
-              background: url(../images/teach/confrontation.png) no-repeat;
-              background-size: 200%;
-              background-position: 0 0;
-              width: 2.625rem;
-              height: 2.375rem;
-            }
-            .vt {
-              margin: 0.5rem 2.5rem;
-              color: #838ba0;
-              font-weight: normal;
-            }
-            .ir {
-              background: url(../images/teach/confrontation.png) no-repeat;
-              background-size: 200%;
-              background-position: -2.625rem 0;
-              width: 2.625rem;
-              height: 2.375rem;
-            }
-          }
-          .rt {
-            text-align: center;
           }
         }
-        .pi,
-        .cmia,
-        .exl,
-        .exr {
+        .pi {
           text-align: center;
           font-weight: bold;
           color: #4a5ec5;
           font-size: 0.95rem;
-          margin-top: 0;
-        }
-        .pi {
           margin-top: -2rem;
           margin-bottom: 1rem;
           p {
             color: #4d515d;
-            font-size: .25rem;
+            font-size: 0.25rem;
             span {
               color: #f30d0d;
-              margin-left: .25rem;
+              margin-left: 0.25rem;
               &:nth-child(2) {
                 color: #d3d6e0;
-                margin: 0 .25rem;
+                margin: 0 0.25rem;
                 font-weight: lighter;
-
               }
             }
           }
         }
-        .cra {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
+        .cmia_bs {
           text-align: center;
-          background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
-          padding: 1rem;
-          margin: 1rem 1rem 0;
-          border-radius: 3rem;
-          color: #4d515d;
-          .rtl,
-          .rtr {
-            .tn {
-              color: #838ba0;
-            }
-            .rm,
-            .rml {
-              font-weight: bold;
-              &.red {
-                color: #f30d0d;
-              }
-            }
-            .rml {
-              font-size: 0.9rem;
-            }
-          }
-          .rtl {
-            margin-left: 2rem;
-          }
-          .rtr {
-            margin-right: 2rem;
-          }
-
-          .rma {
-            position: relative;
-            .rmi {
-              display: grid;
-              grid-template-rows: repeat(4, 1fr);
-              position: absolute;
-              left: 50%;
-              top: 50%;
-              transform: translate(-50%, -50%);
-              // display: inline-block;
-              border-radius: 6.25rem;
-              background: #e9f5ff;
-              text-align: center;
-              width: 6rem;
-              height: 6rem;
-              div {
-                height: 1rem;
-              }
-              .rs {
-                color: #4a5ec5;
-                font-size: 1.5rem;
-                margin-top: -0.4rem;
-              }
-            }
-          }
-        }
-        .exl,
-        .exr {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          margin-top: 1.25rem;
-          margin-bottom: 2rem;
-        }
-        .exl {
-          p {
-            &:nth-child(2) {
-              color: #4d515d;
-            }
-          }
+          font-weight: bold;
+          color: #4a5ec5;
+          font-size: 0.95rem;
         }
 
         // new create end

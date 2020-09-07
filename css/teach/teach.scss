@@ -44,6 +44,7 @@ aside {
       margin-top: -0.3rem;
 
       div {
+        position: relative;
         display: inline-block;
         color: #838ba0;
         text-align: center;
@@ -145,7 +146,7 @@ aside {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            .tn {
+            .tn,.tnr {
               p {
                 font-size: 0.848rem;
               }
