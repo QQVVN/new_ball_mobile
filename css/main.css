@@ -10811,6 +10811,7 @@ aside.teach .content {
   height: calc(100vh - (6.625rem + 3.5rem + 2.625rem));
   overflow-y: scroll;
   padding: 0 0 6.25rem 0;
+  background-color: #fff;
 }
 aside.teach .content .card {
   background: #fff;
@@ -10940,6 +10941,7 @@ aside.teach .content .card .r .lt,
 aside.teach .content .card .r .ltl,
 aside.teach .content .card .r .mr,
 aside.teach .content .card .r .rt,
+aside.teach .content .card .r .rtl,
 aside.teach .content .card .r .rts {
   float: left;
   text-align: center;
@@ -10949,6 +10951,7 @@ aside.teach .content .card .r .lt .red,
 aside.teach .content .card .r .ltl .red,
 aside.teach .content .card .r .mr .red,
 aside.teach .content .card .r .rt .red,
+aside.teach .content .card .r .rtl .red,
 aside.teach .content .card .r .rts .red {
   color: #f30d0d;
   font-weight: bold;
@@ -10957,6 +10960,7 @@ aside.teach .content .card .r .lt .gy,
 aside.teach .content .card .r .ltl .gy,
 aside.teach .content .card .r .mr .gy,
 aside.teach .content .card .r .rt .gy,
+aside.teach .content .card .r .rtl .gy,
 aside.teach .content .card .r .rts .gy {
   color: #4d515d;
   font-weight: bold;
@@ -10970,8 +10974,14 @@ aside.teach .content .card .r .ltl {
 aside.teach .content .card .r .rt {
   margin-left: 6.9rem;
 }
+aside.teach .content .card .r .rtl {
+  margin-left: 6.4rem;
+}
+aside.teach .content .card .r .rtl p:nth-child(2) {
+  padding-left: 0.25rem;
+}
 aside.teach .content .card .r .rts {
-  margin-left: 7rem;
+  margin-left: 6.4rem;
 }
 aside.teach .content .card .r .mr {
   float: none;
@@ -10992,170 +11002,37 @@ aside.teach .content .card .r .mr div:nth-child(2) {
   margin-top: -0.4rem;
   color: #4a5ec5;
 }
-aside.teach .content .card .el, aside.teach .content .card .er {
+aside.teach .content .card .el, aside.teach .content .card .er, aside.teach .content .card .ell {
   width: 50%;
   color: #4a5ec5;
 }
-aside.teach .content .card .el p, aside.teach .content .card .er p {
+aside.teach .content .card .el p, aside.teach .content .card .er p, aside.teach .content .card .ell p {
   text-align: center;
 }
 aside.teach .content .card .er {
   width: 100%;
   padding-left: 12rem;
 }
-aside.teach .content .card .t_info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 1.875rem 0.5rem;
-  font-weight: bold;
-  color: #4d515d;
-  font-family: "my_font";
+aside.teach .content .card .ell {
+  width: auto;
+  line-height: 1.2rem;
+  *zoom: 1;
 }
-aside.teach .content .card .t_info .lt,
-aside.teach .content .card .t_info .ltl,
-aside.teach .content .card .t_info .rt {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+aside.teach .content .card .ell:after, aside.teach .content .card .ell:before {
+  content: "";
+  display: table;
 }
-aside.teach .content .card .t_info .lt .tn p,
-aside.teach .content .card .t_info .lt .tnr p,
-aside.teach .content .card .t_info .ltl .tn p,
-aside.teach .content .card .t_info .ltl .tnr p,
-aside.teach .content .card .t_info .rt .tn p,
-aside.teach .content .card .t_info .rt .tnr p {
-  font-size: 0.848rem;
+aside.teach .content .card .ell:after {
+  clear: both;
 }
-aside.teach .content .card .t_info .lt .s,
-aside.teach .content .card .t_info .ltl .s,
-aside.teach .content .card .t_info .rt .s {
-  font-size: 0.8rem;
+aside.teach .content .card .ell div {
+  float: left;
 }
-aside.teach .content .card .t_info .lt .per,
-aside.teach .content .card .t_info .ltl .per,
-aside.teach .content .card .t_info .rt .per {
-  font-weight: normal;
+aside.teach .content .card .ell div:nth-child(1) {
+  margin-left: 1.5rem;
 }
-aside.teach .content .card .t_info .lt .red,
-aside.teach .content .card .t_info .ltl .red,
-aside.teach .content .card .t_info .rt .red {
-  color: #f30d0d;
-}
-aside.teach .content .card .t_info .lt {
-  margin-left: 1rem;
-}
-aside.teach .content .card .t_info .ltl {
-  margin-left: -1rem;
-}
-aside.teach .content .card .t_info .rt {
-  margin-right: 1rem;
-}
-aside.teach .content .card .t_info .mva {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-aside.teach .content .card .t_info .mva .il {
-  background: url(../images/teach/confrontation.png) no-repeat;
-  background-size: 200%;
-  background-position: 0 0;
-  width: 2.625rem;
-  height: 2.375rem;
-}
-aside.teach .content .card .t_info .mva .vt {
-  margin: 0.5rem 2.5rem;
-  color: #838ba0;
-  font-weight: normal;
-}
-aside.teach .content .card .t_info .mva .ir {
-  background: url(../images/teach/confrontation.png) no-repeat;
-  background-size: 200%;
-  background-position: -2.625rem 0;
-  width: 2.625rem;
-  height: 2.375rem;
-}
-aside.teach .content .card .t_info .rt {
-  text-align: center;
-}
-aside.teach .content .card .cmia,
-aside.teach .content .card .exl,
-aside.teach .content .card .exr {
-  text-align: center;
-  font-weight: bold;
-  color: #4a5ec5;
-  font-size: 0.95rem;
-  margin-top: -2rem;
-}
-aside.teach .content .card .cra {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-  background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
-  padding: 1rem;
-  margin: 1rem 1rem 0;
-  border-radius: 3rem;
-  color: #4d515d;
-}
-aside.teach .content .card .cra .rtl .tn,
-aside.teach .content .card .cra .rtr .tn {
-  color: #838ba0;
-  margin-bottom: 0.25rem;
-}
-aside.teach .content .card .cra .rtl .rm,
-aside.teach .content .card .cra .rtl .rml,
-aside.teach .content .card .cra .rtr .rm,
-aside.teach .content .card .cra .rtr .rml {
-  font-weight: bold;
-}
-aside.teach .content .card .cra .rtl .rm.red,
-aside.teach .content .card .cra .rtl .rml.red,
-aside.teach .content .card .cra .rtr .rm.red,
-aside.teach .content .card .cra .rtr .rml.red {
-  color: #f30d0d;
-}
-aside.teach .content .card .cra .rtl .rml,
-aside.teach .content .card .cra .rtr .rml {
-  font-size: 0.9rem;
-}
-aside.teach .content .card .cra .rtl {
-  margin-left: 2rem;
-}
-aside.teach .content .card .cra .rtr {
-  margin-right: 2rem;
-}
-aside.teach .content .card .cra .rma {
-  position: relative;
-}
-aside.teach .content .card .cra .rma .rmi {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 6.25rem;
-  background: #e9f5ff;
-  text-align: center;
-  width: 6rem;
-  height: 6rem;
-}
-aside.teach .content .card .cra .rma .rmi div {
-  height: 1rem;
-}
-aside.teach .content .card .cra .rma .rmi .rs {
-  color: #4a5ec5;
-  font-size: 1.5rem;
-  margin-top: -0.4rem;
-}
-aside.teach .content .card .exl,
-aside.teach .content .card .exr {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 1.25rem;
-  margin-bottom: 2rem;
-}
-aside.teach .content .card .exl p:nth-child(2) {
+aside.teach .content .card .ell div:nth-child(2) {
+  margin-left: 2.2rem;
   color: #4d515d;
 }
 aside.teach .content .card .vs_area {
