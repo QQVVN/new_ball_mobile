@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "my_font";
-  src: local("微軟正黑體");
+  src: local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
   unicode-range: U+4E00-9FFF, U+2E80-2EFF;
 }
 @font-face {
@@ -32,14 +32,23 @@ button,
 input,
 a,
 div, span {
+  -ms-font-family: "my_font";
+  -moz-font-family: "my_font";
+  -webkit-font-family: "my_font";
   font-family: "my_font";
 }
 
 span {
+  -ms-font-family: "my_font";
+  -moz-font-family: "my_font";
+  -webkit-font-family: "my_font";
   font-family: "my_font";
 }
 
 * {
+  -ms-font-family: "my_font";
+  -moz-font-family: "my_font";
+  -webkit-font-family: "my_font";
   font-family: "my_font";
 }
 
