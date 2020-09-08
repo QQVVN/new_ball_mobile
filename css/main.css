@@ -10847,6 +10847,162 @@ aside.teach .content .card h1:before {
   background: #b5c1ff;
   border-radius: 8px;
 }
+aside.teach .content .card .ti {
+  *zoom: 1;
+  width: 90%;
+  margin: 3rem auto 0;
+  color: #4d515d;
+}
+aside.teach .content .card .ti:after, aside.teach .content .card .ti:before {
+  content: "";
+  display: table;
+}
+aside.teach .content .card .ti:after {
+  clear: both;
+}
+aside.teach .content .card .ti .lt,
+aside.teach .content .card .ti .ltl,
+aside.teach .content .card .ti .mvs,
+aside.teach .content .card .ti .rt {
+  float: left;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+aside.teach .content .card .ti .lt .ts,
+aside.teach .content .card .ti .lt .tp,
+aside.teach .content .card .ti .ltl .ts,
+aside.teach .content .card .ti .ltl .tp,
+aside.teach .content .card .ti .rt .ts,
+aside.teach .content .card .ti .rt .tp {
+  font-size: 0.8rem;
+}
+aside.teach .content .card .ti .lt .red,
+aside.teach .content .card .ti .ltl .red,
+aside.teach .content .card .ti .rt .red {
+  color: #f30d0d;
+}
+aside.teach .content .card .ti .lt {
+  margin: 0 0.8rem 0 1.5rem;
+}
+aside.teach .content .card .ti .ltl {
+  margin: 0 0.8rem 0 -1.3rem;
+}
+aside.teach .content .card .ti .mvs .li,
+aside.teach .content .card .ti .mvs .vst,
+aside.teach .content .card .ti .mvs .ri {
+  float: left;
+}
+aside.teach .content .card .ti .mvs .li {
+  background: url(../images/teach/confrontation.png) no-repeat;
+  background-size: 200%;
+  background-position: 0 0;
+  width: 2.625rem;
+  height: 2.375rem;
+}
+aside.teach .content .card .ti .mvs .vst {
+  margin: 0 2.2rem 0.5rem 2.2rem;
+  color: #838ba0;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+aside.teach .content .card .ti .mvs .ri {
+  background: url(../images/teach/confrontation.png) no-repeat;
+  background-size: 200%;
+  background-position: -2.625rem 0;
+  width: 2.625rem;
+  height: 2.375rem;
+}
+aside.teach .content .card .ti .rt {
+  margin-left: 1rem;
+}
+aside.teach .content .card .m {
+  text-align: center;
+  font-weight: bold;
+  color: #4a5ec5;
+}
+aside.teach .content .card .r {
+  *zoom: 1;
+  position: relative;
+  background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
+  border-radius: 3rem;
+  margin: 1rem 1.5rem;
+  padding: 1rem 1rem;
+}
+aside.teach .content .card .r:after, aside.teach .content .card .r:before {
+  content: "";
+  display: table;
+}
+aside.teach .content .card .r:after {
+  clear: both;
+}
+aside.teach .content .card .r .lt,
+aside.teach .content .card .r .ltl,
+aside.teach .content .card .r .mr,
+aside.teach .content .card .r .rt,
+aside.teach .content .card .r .rts {
+  float: left;
+  text-align: center;
+  color: #838ba0;
+}
+aside.teach .content .card .r .lt .red,
+aside.teach .content .card .r .ltl .red,
+aside.teach .content .card .r .mr .red,
+aside.teach .content .card .r .rt .red,
+aside.teach .content .card .r .rts .red {
+  color: #f30d0d;
+  font-weight: bold;
+}
+aside.teach .content .card .r .lt .gy,
+aside.teach .content .card .r .ltl .gy,
+aside.teach .content .card .r .mr .gy,
+aside.teach .content .card .r .rt .gy,
+aside.teach .content .card .r .rts .gy {
+  color: #4d515d;
+  font-weight: bold;
+}
+aside.teach .content .card .r .lt {
+  margin-left: 2.2rem;
+}
+aside.teach .content .card .r .ltl {
+  margin-left: 1.6rem;
+}
+aside.teach .content .card .r .rt {
+  margin-left: 6.9rem;
+}
+aside.teach .content .card .r .rts {
+  margin-left: 7rem;
+}
+aside.teach .content .card .r .mr {
+  float: none;
+  position: absolute;
+  color: #4d515d;
+  border-radius: 6.25rem;
+  background: #e9f5ff;
+  width: 6rem;
+  height: 6rem;
+  left: 7.6rem;
+  top: -0.5rem;
+}
+aside.teach .content .card .r .mr div:nth-child(1) {
+  margin-top: 1.5rem;
+}
+aside.teach .content .card .r .mr div:nth-child(2) {
+  font-size: 1.5rem;
+  margin-top: -0.4rem;
+  color: #4a5ec5;
+}
+aside.teach .content .card .el, aside.teach .content .card .er {
+  width: 50%;
+  color: #4a5ec5;
+}
+aside.teach .content .card .el p, aside.teach .content .card .er p {
+  text-align: center;
+}
+aside.teach .content .card .er {
+  width: 100%;
+  padding-left: 12rem;
+}
 aside.teach .content .card .t_info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

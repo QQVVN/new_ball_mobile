@@ -1,9 +1,28 @@
+@mixin clearfix {
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom: 1;
+}
+
+$gray: #4d515d;
+$bgc: #f7f7f7;
+$vsc: #838ba0;
+$red: #f30d0d;
+$blue: #4a5ec5;
+$black: #000000;
+
 aside {
   &.teach {
     padding: 0 0 6.25rem 0;
     width: 100vw;
     height: calc(100vh - 2.5rem - 0.625rem);
-    background: #f7f7f7;
+    background: $bgc;
     z-index: 0;
     display: inline-block;
     position: fixed;
@@ -135,13 +154,150 @@ aside {
         }
 
         // new_create
+        .ti {
+          @include clearfix;
+          width: 90%;
+          margin: 3rem auto 0;
+          color: $gray;
+          .lt,
+          .ltl,
+          .mvs,
+          .rt {
+            float: left;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+          }
+          .lt,
+          .ltl,
+          .rt {
+            .ts,
+            .tp {
+              font-size: 0.8rem;
+            }
+            .red {
+              color: $red;
+            }
+          }
+          .lt {
+            margin: 0 0.8rem 0 1.5rem;
+          }
+          .ltl {
+            margin: 0 0.8rem 0 -1.3rem;
+          }
+          .mvs {
+            .li,
+            .vst,
+            .ri {
+              float: left;
+            }
+            .li {
+              background: url(../images/teach/confrontation.png) no-repeat;
+              background-size: 200%;
+              background-position: 0 0;
+              width: 2.625rem;
+              height: 2.375rem;
+            }
+            .vst {
+              margin: 0 2.2rem 0.5rem 2.2rem;
+              color: $vsc;
+              font-weight: normal;
+              font-size: 1.3rem;
+            }
+            .ri {
+              background: url(../images/teach/confrontation.png) no-repeat;
+              background-size: 200%;
+              background-position: -2.625rem 0;
+              width: 2.625rem;
+              height: 2.375rem;
+            }
+          }
+          .rt {
+            margin-left: 1rem;
+          }
+        }
+        .m {
+          text-align: center;
+          font-weight: bold;
+          color: $blue;
+        }
+        .r {
+          @include clearfix;
+          position: relative;
+          background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
+          border-radius: 3rem;
+          margin: 1rem 1.5rem;
+          padding: 1rem 1rem;
+          .lt,
+          .ltl,
+          .mr,
+          .rt,
+          .rts {
+            float: left;
+            text-align: center;
+            color: $vsc;
+            .red {
+              color: $red;
+              font-weight: bold;
+            }
+            .gy {
+              color: $gray;
+              font-weight: bold;
+            }
+          }
+          .lt {
+            margin-left: 2.2rem;
+          }
+          .ltl {
+            margin-left: 1.6rem;
+          }
+          .rt {
+            margin-left: 6.9rem;
+          }
+          .rts {
+            margin-left: 7rem;
+          }
+          .mr {
+            float: none;
+            position: absolute;
+            color: $gray;
+            // font-weight: bold;
+            border-radius: 6.25rem;
+            background: #e9f5ff;
+            width: 6rem;
+            height: 6rem;
+            left: 7.6rem;
+            top: -0.5rem;
+            div {
+              &:nth-child(1) {
+                margin-top: 1.5rem;
+              }
+              &:nth-child(2) {
+                font-size: 1.5rem;
+                margin-top: -0.4rem;
+                color: $blue;
+              }
+            }
+          }
+        }
+        .el,.er {
+          width: 50%;
+          color: $blue;
+          p{
+            text-align: center;
+          }
+        }
+        .er {
+          width: 100%;
+          padding-left: 12rem;
+        }
 
         .t_info {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           padding: 1.875rem 0.5rem;
           font-weight: bold;
-          color: #4d515d;
+          color: $gray;
           font-family: "my_font";
           .lt,
           .ltl,
@@ -189,7 +345,7 @@ aside {
             }
             .vt {
               margin: 0.5rem 2.5rem;
-              color: #838ba0;
+              color: $vsc;
               font-weight: normal;
             }
             .ir {
