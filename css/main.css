@@ -11002,11 +11002,15 @@ aside.teach .content .card .r .mr div:nth-child(2) {
   margin-top: -0.4rem;
   color: #4a5ec5;
 }
-aside.teach .content .card .el, aside.teach .content .card .er, aside.teach .content .card .ell {
+aside.teach .content .card .el,
+aside.teach .content .card .er,
+aside.teach .content .card .ell {
   width: 50%;
   color: #4a5ec5;
 }
-aside.teach .content .card .el p, aside.teach .content .card .er p, aside.teach .content .card .ell p {
+aside.teach .content .card .el p,
+aside.teach .content .card .er p,
+aside.teach .content .card .ell p {
   text-align: center;
 }
 aside.teach .content .card .er {
@@ -11017,6 +11021,7 @@ aside.teach .content .card .ell {
   width: auto;
   line-height: 1.2rem;
   *zoom: 1;
+  font-weight: bold;
 }
 aside.teach .content .card .ell:after, aside.teach .content .card .ell:before {
   content: "";
@@ -11031,9 +11036,18 @@ aside.teach .content .card .ell div {
 aside.teach .content .card .ell div:nth-child(1) {
   margin-left: 1.5rem;
 }
+aside.teach .content .card .ell div:nth-child(1) .bkb {
+  margin-left: 0.5rem;
+}
 aside.teach .content .card .ell div:nth-child(2) {
   margin-left: 2.2rem;
   color: #4d515d;
+}
+aside.teach .content .card .ell .bkbl {
+  margin-left: -0.25rem;
+}
+aside.teach .content .card .ell .bkbr {
+  margin-left: 2rem;
 }
 aside.teach .content .card .vs_area {
   position: relative;

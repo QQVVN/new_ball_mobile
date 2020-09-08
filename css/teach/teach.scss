@@ -260,7 +260,7 @@ aside {
             margin-left: 6.4rem;
             p {
               &:nth-child(2) {
-                padding-left: .25rem;
+                padding-left: 0.25rem;
               }
             }
           }
@@ -290,10 +290,12 @@ aside {
             }
           }
         }
-        .el,.er,.ell {
+        .el,
+        .er,
+        .ell {
           width: 50%;
           color: $blue;
-          p{
+          p {
             text-align: center;
           }
         }
@@ -305,19 +307,27 @@ aside {
           width: auto;
           line-height: 1.2rem;
           @include clearfix;
+          font-weight: bold;
           div {
             float: left;
             &:nth-child(1) {
               margin-left: 1.5rem;
+              .bkb {
+                margin-left: 0.5rem;
+              }
             }
             &:nth-child(2) {
               margin-left: 2.2rem;
               color: $gray;
             }
           }
+          .bkbl {
+            margin-left: -.25rem;
+          }
+          .bkbr {
+            margin-left: 2rem;
+          }
         }
-
-
 
         // .t_info {
         //   display: grid;
