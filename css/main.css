@@ -10721,13 +10721,12 @@ aside.teach {
 aside.teach .title {
   padding: 0.625rem 3.125rem 0 3.125rem;
   background: #fff;
-  font-size: 1.125rem;
+  font-size: 1rem;
   box-shadow: 0px 1px 0.1875rem 1px #e7e7e7;
 }
 aside.teach .title div {
   color: #838ba0;
   display: inline-block;
-  line-height: 40px;
   width: 7rem;
   text-align: center;
   border-bottom: 0.2rem solid transparent;
@@ -10820,14 +10819,13 @@ aside.teach .content {
   height: calc(100vh - (6.625rem + 3.5rem + 2.625rem));
   overflow-y: scroll;
   padding: 0 0 6.25rem 0;
-  background-color: #fff;
 }
 aside.teach .content .card {
   background: #fff;
   padding: 0 0.6875rem 3.125rem 0.6875rem;
 }
 aside.teach .content .card:first-child {
-  margin: 0.625rem 0 0 0;
+  margin: 0.4rem 0 0 0;
 }
 aside.teach .content .card h1 {
   color: #4d515d;
@@ -10857,6 +10855,94 @@ aside.teach .content .card h1:before {
   background: #b5c1ff;
   border-radius: 8px;
 }
+aside.teach .content .card .top {
+  width: 100%;
+  margin: 10% auto 0;
+}
+aside.teach .content .card .top .box {
+  *zoom: 1;
+  width: auto;
+  height: auto;
+}
+aside.teach .content .card .top .box:after, aside.teach .content .card .top .box:before {
+  content: "";
+  display: table;
+}
+aside.teach .content .card .top .box:after {
+  clear: both;
+}
+aside.teach .content .card .top .box .bl {
+  float: left;
+  width: 43%;
+}
+aside.teach .content .card .top .box .bl .tb {
+  float: right;
+  margin-right: 2%;
+  text-align: center;
+  font-weight: bold;
+  color: #4d515d;
+  width: 63%;
+}
+aside.teach .content .card .top .box .bl .tb .red {
+  color: #f30d0d;
+}
+aside.teach .content .card .top .box .bl .tb .lm,
+aside.teach .content .card .top .box .bl .tb .lb {
+  font-size: 0.9rem;
+}
+aside.teach .content .card .top .box .bl .i {
+  float: right;
+  background: url(../images/teach/confrontation.png) no-repeat;
+  background-size: 200%;
+  background-position: 0 0;
+  width: 2.625rem;
+  height: 2.375rem;
+}
+aside.teach .content .card .top .box .m {
+  float: left;
+  width: 10%;
+  margin: 0 2%;
+}
+aside.teach .content .card .top .box .m .v {
+  color: #838ba0;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+aside.teach .content .card .top .box .br {
+  float: left;
+  width: 43%;
+  text-align: center;
+  text-align: center;
+}
+aside.teach .content .card .top .box .br .tb {
+  float: left;
+  text-align: center;
+  margin-left: 2%;
+  font-weight: bold;
+  color: #4d515d;
+  width: 63%;
+}
+aside.teach .content .card .top .box .br .tb .red {
+  color: #f30d0d;
+}
+aside.teach .content .card .top .box .br .tb .rm,
+aside.teach .content .card .top .box .br .tb .rb {
+  font-size: 0.9rem;
+}
+aside.teach .content .card .top .box .br .ii {
+  float: left;
+  background: url(../images/teach/confrontation.png) no-repeat;
+  background-size: 200%;
+  background-position: -2.625rem 0;
+  width: 2.625rem;
+  height: 2.375rem;
+}
+aside.teach .content .card .c {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #4a5ec5;
+}
 aside.teach .content .card .ti {
   *zoom: 1;
   width: 90%;
@@ -10874,6 +10960,7 @@ aside.teach .content .card .ti .lt,
 aside.teach .content .card .ti .ltl,
 aside.teach .content .card .ti .mvs,
 aside.teach .content .card .ti .rt {
+  width: auto;
   float: left;
   text-align: center;
   font-size: 0.9rem;

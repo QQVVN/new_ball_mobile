@@ -29,12 +29,11 @@ aside {
     .title {
       padding: 0.625rem 3.125rem 0 3.125rem;
       background: #fff;
-      font-size: 1.125rem;
+      font-size: 1rem;
       box-shadow: 0px 1px 0.1875rem 1px #e7e7e7;
       div {
         color: #838ba0;
         display: inline-block;
-        line-height: 40px;
         width: 7rem;
         text-align: center;
         border-bottom: 0.2rem solid transparent;
@@ -118,12 +117,11 @@ aside {
       height: calc(100vh - (6.625rem + 3.5rem + 2.625rem));
       overflow-y: scroll;
       padding: 0 0 6.25rem 0;
-      background-color: #fff;
       .card {
         background: #fff;
         padding: 0 0.6875rem 3.125rem 0.6875rem;
         &:first-child {
-          margin: 0.625rem 0 0 0;
+          margin: 0.4rem 0 0 0;
         }
         h1 {
           color: #4d515d;
@@ -155,6 +153,93 @@ aside {
         }
 
         // new_create
+        .top {
+          width: 100%;
+          margin: 10% auto 0;
+          // border: 1px solid black;
+          .box {
+            @include clearfix;
+            width: auto;
+            height: auto;
+            // border: 1px solid black;
+            .bl {
+              float: left;
+              width: 43%;
+              // border: 1px solid black;
+              .tb {
+                float: right;
+                margin-right: 2%;
+                text-align: center;
+                font-weight: bold;
+                color: #4d515d;
+                width: 63%;
+                .red {
+                  color: $red;
+                }
+                .lm,
+                .lb {
+                  font-size: 0.9rem;
+                }
+              }
+              .i {
+                float: right;
+                background: url(../images/teach/confrontation.png) no-repeat;
+                background-size: 200%;
+                background-position: 0 0;
+                width: 2.625rem;
+                height: 2.375rem;
+              }
+            }
+            .m {
+              float: left;
+              width: 10%;
+              margin: 0 2%;
+              // border: 1px solid black;
+              .v {
+                color: $vsc;
+                font-weight: normal;
+                font-size: 1.3rem;
+              }
+            }
+            .br {
+              float: left;
+              width: 43%;
+              text-align: center;
+              // border: 1px solid black;
+              text-align: center;
+              .tb {
+                float: left;
+                text-align: center;
+                margin-left: 2%;
+                font-weight: bold;
+                color: #4d515d;
+                width: 63%;
+                .red {
+                  color: $red;
+                }
+                .rm,
+                .rb {
+                  font-size: 0.9rem;
+                }
+              }
+              .ii {
+                float: left;
+                background: url(../images/teach/confrontation.png) no-repeat;
+                background-size: 200%;
+                background-position: -2.625rem 0;
+                width: 2.625rem;
+                height: 2.375rem;
+              }
+            }
+          }
+        }
+        .c {
+          width: 100%;
+          text-align: center;
+          font-weight: bold;
+          color: $blue;
+        }
+
         .ti {
           @include clearfix;
           width: 90%;
@@ -164,6 +249,7 @@ aside {
           .ltl,
           .mvs,
           .rt {
+            width: auto;
             float: left;
             text-align: center;
             font-size: 0.9rem;
@@ -322,7 +408,7 @@ aside {
             }
           }
           .bkbl {
-            margin-left: -.25rem;
+            margin-left: -0.25rem;
           }
           .bkbr {
             margin-left: 2rem;
