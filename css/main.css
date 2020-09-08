@@ -11260,11 +11260,17 @@ aside.teach .content .card .ti .ltl .tbs, aside.teach .content .card .ti .rt .tb
   margin-left: 1.5rem;
   margin-top: 0.5rem;
 }
+aside.teach .content .card .ti .ltl .tbss, aside.teach .content .card .ti .rt .tbss {
+  margin-left: 3.5rem;
+}
 aside.teach .content .card .ti .ltl .rtbs, aside.teach .content .card .ti .rt .rtbs {
   margin-top: 0.5rem;
 }
 aside.teach .content .card .ti .lbs {
   margin-right: 0.5rem;
+}
+aside.teach .content .card .ti .lbss {
+  margin-right: 1.25rem;
 }
 aside.teach .content .card .ti .mvs .bs {
   margin: 0 2.5rem 0 2.5rem;
@@ -11284,6 +11290,9 @@ aside.teach .content .card .per .red {
 }
 aside.teach .content .card .r .bs {
   margin-left: 2rem;
+}
+aside.teach .content .card .r .bbs {
+  margin-left: 1.25rem;
 }
 aside.teach .content .card .r .bss {
   margin-left: 1.75rem;
