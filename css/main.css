@@ -10823,13 +10823,14 @@ aside.teach .content {
 aside.teach .content .card {
   background: #fff;
   padding: 0 0.6875rem 3.125rem 0.6875rem;
+  font-size: 0.88rem;
 }
 aside.teach .content .card:first-child {
   margin: 0.4rem 0 0 0;
 }
 aside.teach .content .card h1 {
   color: #4d515d;
-  padding: 0.9375rem 0 0.9375rem 0.75rem;
+  padding: 0.5rem 0 0.25rem 0.75rem;
   border-bottom: 1px solid #e0e3f3;
   position: relative;
   line-height: 1.5rem;
@@ -10858,24 +10859,20 @@ aside.teach .content .card h1:before {
 aside.teach .content .card .top {
   width: 100%;
   margin: 10% auto 0;
-}
-aside.teach .content .card .top .box {
   *zoom: 1;
-  width: auto;
-  height: auto;
 }
-aside.teach .content .card .top .box:after, aside.teach .content .card .top .box:before {
+aside.teach .content .card .top:after, aside.teach .content .card .top:before {
   content: "";
   display: table;
 }
-aside.teach .content .card .top .box:after {
+aside.teach .content .card .top:after {
   clear: both;
 }
-aside.teach .content .card .top .box .bl {
+aside.teach .content .card .top .bl {
   float: left;
   width: 43%;
 }
-aside.teach .content .card .top .box .bl .tb {
+aside.teach .content .card .top .bl .tb {
   float: right;
   margin-right: 2%;
   text-align: center;
@@ -10883,14 +10880,14 @@ aside.teach .content .card .top .box .bl .tb {
   color: #4d515d;
   width: 63%;
 }
-aside.teach .content .card .top .box .bl .tb .red {
+aside.teach .content .card .top .bl .tb .red {
   color: #f30d0d;
 }
-aside.teach .content .card .top .box .bl .tb .lm,
-aside.teach .content .card .top .box .bl .tb .lb {
+aside.teach .content .card .top .bl .tb .lm,
+aside.teach .content .card .top .bl .tb .lb {
   font-size: 0.9rem;
 }
-aside.teach .content .card .top .box .bl .i {
+aside.teach .content .card .top .bl .i {
   float: right;
   background: url(../images/teach/confrontation.png) no-repeat;
   background-size: 200%;
@@ -10898,23 +10895,22 @@ aside.teach .content .card .top .box .bl .i {
   width: 2.625rem;
   height: 2.375rem;
 }
-aside.teach .content .card .top .box .m {
+aside.teach .content .card .top .m {
   float: left;
   width: 10%;
   margin: 0 2%;
 }
-aside.teach .content .card .top .box .m .v {
+aside.teach .content .card .top .m .v {
   color: #838ba0;
   font-weight: normal;
   font-size: 1.3rem;
 }
-aside.teach .content .card .top .box .br {
+aside.teach .content .card .top .br {
   float: left;
   width: 43%;
   text-align: center;
-  text-align: center;
 }
-aside.teach .content .card .top .box .br .tb {
+aside.teach .content .card .top .br .tb {
   float: left;
   text-align: center;
   margin-left: 2%;
@@ -10922,14 +10918,14 @@ aside.teach .content .card .top .box .br .tb {
   color: #4d515d;
   width: 63%;
 }
-aside.teach .content .card .top .box .br .tb .red {
+aside.teach .content .card .top .br .tb .red {
   color: #f30d0d;
 }
-aside.teach .content .card .top .box .br .tb .rm,
-aside.teach .content .card .top .box .br .tb .rb {
+aside.teach .content .card .top .br .tb .rm,
+aside.teach .content .card .top .br .tb .rb {
   font-size: 0.9rem;
 }
-aside.teach .content .card .top .box .br .ii {
+aside.teach .content .card .top .br .ii {
   float: left;
   background: url(../images/teach/confrontation.png) no-repeat;
   background-size: 200%;
@@ -10942,6 +10938,108 @@ aside.teach .content .card .c {
   text-align: center;
   font-weight: bold;
   color: #4a5ec5;
+}
+aside.teach .content .card .res {
+  width: 90%;
+  margin: 5% auto 0;
+  background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
+  border-radius: 3rem;
+  padding: 1rem 1rem;
+  *zoom: 1;
+  position: relative;
+  text-align: center;
+}
+aside.teach .content .card .res:after, aside.teach .content .card .res:before {
+  content: "";
+  display: table;
+}
+aside.teach .content .card .res:after {
+  clear: both;
+}
+aside.teach .content .card .res .lt {
+  float: left;
+  width: 40%;
+}
+aside.teach .content .card .res .lt .ltb {
+  color: #838ba0;
+  padding-right: 12%;
+}
+aside.teach .content .card .res .lt .ltb .red {
+  color: #f30d0d;
+  font-weight: bold;
+}
+aside.teach .content .card .res .lt .ltb .gy {
+  color: #4d515d;
+  font-weight: bold;
+}
+aside.teach .content .card .res .ms {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+aside.teach .content .card .res .msbg {
+  position: absolute;
+  text-align: center;
+  border-radius: 6.25rem;
+  background: #e9f5ff;
+  width: 6rem;
+  height: 6rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+aside.teach .content .card .res .msbg div:first-child {
+  margin-top: 25%;
+}
+aside.teach .content .card .res .msbg div:last-child {
+  color: #4a5ec5;
+  font-size: 1.5rem;
+  margin-top: -7%;
+}
+aside.teach .content .card .res .rt {
+  float: left;
+  width: 40%;
+}
+aside.teach .content .card .res .rt .rtb {
+  color: #838ba0;
+  padding-left: 12%;
+}
+aside.teach .content .card .res .rt .rtb .red {
+  color: #f30d0d;
+  font-weight: bold;
+}
+aside.teach .content .card .res .rt .rtb .gy {
+  color: #4d515d;
+  font-weight: bold;
+}
+aside.teach .content .card .e {
+  width: 100%;
+  margin: 7% auto 0;
+  *zoom: 1;
+}
+aside.teach .content .card .e:after, aside.teach .content .card .e:before {
+  content: "";
+  display: table;
+}
+aside.teach .content .card .e:after {
+  clear: both;
+}
+aside.teach .content .card .e .le {
+  color: #4a5ec5;
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+}
+aside.teach .content .card .e .re {
+  color: #4a5ec5;
+  width: 50%;
+  float: right;
+  text-align: center;
+  font-weight: bold;
+}
+aside.teach .content .card .e .gy {
+  color: #4d515d;
 }
 aside.teach .content .card .ti {
   *zoom: 1;

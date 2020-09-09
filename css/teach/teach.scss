@@ -120,12 +120,13 @@ aside {
       .card {
         background: #fff;
         padding: 0 0.6875rem 3.125rem 0.6875rem;
+        font-size: .88rem;
         &:first-child {
           margin: 0.4rem 0 0 0;
         }
         h1 {
           color: #4d515d;
-          padding: 0.9375rem 0 0.9375rem 0.75rem;
+          padding: 0.5rem 0 0.25rem 0.75rem;
           border-bottom: 1px solid #e0e3f3;
           position: relative;
           line-height: 1.5rem;
@@ -153,83 +154,75 @@ aside {
         }
 
         // new_create
+        // float start
         .top {
           width: 100%;
           margin: 10% auto 0;
-          // border: 1px solid black;
-          .box {
-            @include clearfix;
-            width: auto;
-            height: auto;
-            // border: 1px solid black;
-            .bl {
-              float: left;
-              width: 43%;
-              // border: 1px solid black;
-              .tb {
-                float: right;
-                margin-right: 2%;
-                text-align: center;
-                font-weight: bold;
-                color: #4d515d;
-                width: 63%;
-                .red {
-                  color: $red;
-                }
-                .lm,
-                .lb {
-                  font-size: 0.9rem;
-                }
+          @include clearfix;
+          .bl {
+            float: left;
+            width: 43%;
+            
+            .tb {
+              float: right;
+              margin-right: 2%;
+              text-align: center;
+              font-weight: bold;
+              color: $gray;
+              width: 63%;
+              .red {
+                color: $red;
               }
-              .i {
-                float: right;
-                background: url(../images/teach/confrontation.png) no-repeat;
-                background-size: 200%;
-                background-position: 0 0;
-                width: 2.625rem;
-                height: 2.375rem;
+              .lm,
+              .lb {
+                font-size: 0.9rem;
               }
             }
-            .m {
+            .i {
+              float: right;
+              background: url(../images/teach/confrontation.png) no-repeat;
+              background-size: 200%;
+              background-position: 0 0;
+              width: 2.625rem;
+              height: 2.375rem;
+            }
+          }
+          .m {
+            float: left;
+            width: 10%;
+            margin: 0 2%;
+            .v {
+              color: $vsc;
+              font-weight: normal;
+              font-size: 1.3rem;
+            }
+          }
+          .br {
+            float: left;
+            width: 43%;
+            text-align: center;
+            .tb {
               float: left;
-              width: 10%;
-              margin: 0 2%;
-              // border: 1px solid black;
-              .v {
-                color: $vsc;
-                font-weight: normal;
-                font-size: 1.3rem;
+              text-align: center;
+              margin-left: 2%;
+              font-weight: bold;
+              color: $gray;
+              width: 63%;
+              .red {
+                color: $red;
+              }
+              .rm,
+              .rb {
+                font-size: 0.9rem;
               }
             }
-            .br {
+            .ii {
               float: left;
-              width: 43%;
-              text-align: center;
-              // border: 1px solid black;
-              text-align: center;
-              .tb {
-                float: left;
-                text-align: center;
-                margin-left: 2%;
-                font-weight: bold;
-                color: #4d515d;
-                width: 63%;
-                .red {
-                  color: $red;
-                }
-                .rm,
-                .rb {
-                  font-size: 0.9rem;
-                }
-              }
-              .ii {
-                float: left;
-                background: url(../images/teach/confrontation.png) no-repeat;
-                background-size: 200%;
-                background-position: -2.625rem 0;
-                width: 2.625rem;
-                height: 2.375rem;
-              }
+              background: url(../images/teach/confrontation.png) no-repeat;
+              background-size: 200%;
+              background-position: -2.625rem 0;
+              width: 2.625rem;
+              height: 2.375rem;
             }
           }
         }
@@ -239,6 +232,104 @@ aside {
           font-weight: bold;
           color: $blue;
         }
+        .res {
+          width: 90%;
+          margin: 5% auto 0;
+          background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
+          border-radius: 3rem;
+          padding: 1rem 1rem;
+          @include clearfix;
+          position: relative;
+          text-align: center;
+          .lt {
+            float: left;
+            width: 40%;
+            .ltb {
+              color: $vsc;
+              padding-right: 12%;
+              .red {
+                color: $red;
+                font-weight: bold;
+              }
+              .gy {
+                color: $gray;
+                font-weight: bold;
+              }
+            }
+          }
+          .ms {
+            float: left;
+            width: 20%;
+            text-align: center;
+          }
+          .msbg {
+            position: absolute;
+            text-align: center;
+            border-radius: 6.25rem;
+            background: #e9f5ff;
+            width: 6rem;
+            height: 6rem;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            div {
+              &:first-child {
+                margin-top: 25%;
+              }
+              &:last-child {
+                color: $blue;
+                font-size: 1.5rem;
+                margin-top: -7%;
+              }
+            }
+          }
+          .rt {
+            float: left;
+            width: 40%;
+            .rtb {
+              color: $vsc;
+              padding-left: 12%;
+              .red {
+                color: $red;
+                font-weight: bold;
+              }
+              .gy {
+                color: $gray;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .e {
+          width: 100%;
+          margin: 7% auto 0;
+          @include clearfix;
+          .le {
+            color: $blue;
+            width: 50%;
+            float: left;
+            text-align: center;
+            font-weight: bold;
+          }
+          .re {
+            color: $blue;
+            width: 50%;
+            float: right;
+            text-align: center;
+            font-weight: bold;
+          }
+          .gy {
+            color: $gray;
+          }
+        }
+        // float end
+
+
+
+
+
+
+
 
         .ti {
           @include clearfix;
