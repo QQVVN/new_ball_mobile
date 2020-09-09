@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "my_font";
-  src: local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
-  unicode-range: U+4E00-9FFF, U+2E80-2EFF;
+  src: local("Arial"), local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
+  unicode-range: U+4E00-9FFF, U+2E80-2EFF, U+0020-007F;
 }
 @font-face {
   font-family: "my_font";
@@ -31,7 +31,8 @@ p,
 button,
 input,
 a,
-div, span {
+div,
+span {
   -ms-font-family: "my_font";
   -moz-font-family: "my_font";
   -webkit-font-family: "my_font";

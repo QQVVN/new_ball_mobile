@@ -5,26 +5,24 @@
   box-sizing: border-box;
 }
 
-
-
-@font-face{
-  font-family: 'my_font';
-  src:local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
-  unicode-range: U+4E00-9FFF ,U+2E80-2EFF;
+@font-face {
+  font-family: "my_font";
+  src: local("Arial"), local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
+  unicode-range: U+4E00-9FFF, U+2E80-2EFF, U+0020-007F;
 }
-@font-face{
-  font-family: 'my_font';
-  src:url(../font/Bahnschrift.TTF);
+@font-face {
+  font-family: "my_font";
+  src: url(../font/Bahnschrift.TTF);
   unicode-range: U+0020-007F;
 }
-@font-face{
-  font-family: 'my_font';
-  src:url(../font/Bahnschrift.TTF);
+@font-face {
+  font-family: "my_font";
+  src: url(../font/Bahnschrift.TTF);
   unicode-range: U+0040;
 }
-@font-face{
-  font-family: 'my_font';
-  src:url(../font/Bahnschrift.TTF);
+@font-face {
+  font-family: "my_font";
+  src: url(../font/Bahnschrift.TTF);
   unicode-range: U+0024;
 }
 
@@ -32,28 +30,29 @@ p,
 button,
 input,
 a,
-div,span {
+div,
+span {
   // font-family: Microsoft JhengHei;
-  -ms-font-family: 'my_font';
-  -moz-font-family: 'my_font';
-  -webkit-font-family: 'my_font';
+  -ms-font-family: "my_font";
+  -moz-font-family: "my_font";
+  -webkit-font-family: "my_font";
   font-family: "my_font";
 }
-span{
+span {
   // font-family: "my_font";
-  -ms-font-family: 'my_font';
-  -moz-font-family: 'my_font';
-  -webkit-font-family: 'my_font';
-   font-family: "my_font";
+  -ms-font-family: "my_font";
+  -moz-font-family: "my_font";
+  -webkit-font-family: "my_font";
+  font-family: "my_font";
 }
-*{
-  -ms-font-family: 'my_font';
-  -moz-font-family: 'my_font';
-  -webkit-font-family: 'my_font';
+* {
+  -ms-font-family: "my_font";
+  -moz-font-family: "my_font";
+  -webkit-font-family: "my_font";
   font-family: "my_font";
 }
 
-a{
+a {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -153,10 +152,9 @@ video {
   vertical-align: baseline;
 }
 
-
 a {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 
 /* Set core body defaults */
 body {
@@ -189,8 +187,6 @@ img {
   display: block;
 }
 
-
-
 /* Inherit fonts for inputs and buttons */
 // input,
 // button,
@@ -199,14 +195,13 @@ img {
 //   font: inherit;
 // }
 
-*{
-    outline: none;
+* {
+  outline: none;
 }
 
-
 button {
-    cursor: pointer;
-  }
+  cursor: pointer;
+}
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -216,14 +211,13 @@ button {
     scroll-behavior: auto !important;
   }
 }
-@media screen and (min-width:200px) and (max-width:320px){
-  html{
+@media screen and (min-width: 200px) and (max-width: 320px) {
+  html {
     font-size: 14px;
   }
-  main{
-    article.menu.menu.menu.menu.menu{
+  main {
+    article.menu.menu.menu.menu.menu {
       height: 43vh;
     }
-  } 
- 
+  }
 }
