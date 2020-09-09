@@ -11448,6 +11448,28 @@ aside.teach .content .card .bingo_area .mid_bingo p:last-child {
   line-height: 0.75rem;
 }
 
+aside.teach .content .card .top .bl .bs, aside.teach .content .card .top .br .bs {
+  margin-top: 5%;
+}
+aside.teach .content .card .mini {
+  text-align: center;
+  margin: 2% 0;
+  font-size: 0.5rem;
+  color: #4d515d;
+  font-weight: bold;
+}
+aside.teach .content .card .mini span:nth-child(1) {
+  color: #f30d0d;
+  margin-left: 1%;
+}
+aside.teach .content .card .mini span:nth-child(2) {
+  color: #d3d6e0;
+  margin: 0 1%;
+}
+aside.teach .content .card .mini span:nth-child(3) {
+  color: #f30d0d;
+  margin-left: 1%;
+}
 aside.teach .content .card .ti .ltl .tbs, aside.teach .content .card .ti .rt .tbs {
   margin-left: 1.5rem;
   margin-top: 0.5rem;

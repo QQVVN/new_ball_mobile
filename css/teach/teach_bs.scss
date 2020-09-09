@@ -22,6 +22,37 @@ aside {
   &.teach {
     .content {
       .card {
+        // float start
+        .top {
+          .bl,.br {
+            .bs {
+              margin-top: 5%;
+            }
+          }
+        }
+        .mini {
+          text-align: center;
+          margin: 2% 0;
+          font-size: .5rem;
+          color: $gray;
+          font-weight: bold;
+          span {
+            &:nth-child(1) {
+              color: $red;
+              margin-left: 1%;
+            }
+            &:nth-child(2) {
+              color: $linegray;
+              margin: 0 1%;
+            }
+            &:nth-child(3) {
+              color: $red;
+              margin-left: 1%;
+            }
+          }
+        }
+        // float end
+
         .ti {
           .ltl,.rt {
             .tbs {
