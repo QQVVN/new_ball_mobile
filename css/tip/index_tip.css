@@ -216,6 +216,54 @@ main .nxb {
 main .nxb:active, main .nxb:hover {
   background-position: 0 -5.626rem;
 }
+main .nt2 {
+  bottom: 28%;
+}
+main .nt3 {
+  bottom: 24%;
+}
+main .nt4 {
+  bottom: 38%;
+}
+main .nt5 {
+  bottom: 3%;
+}
+main .nt6 {
+  bottom: 3%;
+}
+main .realb,
+main .backb,
+main .againb {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 40.5rem;
+  height: 5.626rem;
+}
+main .realb {
+  bottom: 38%;
+  background: url(../../images/tip/button/realb.png) no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+}
+main .backb {
+  bottom: 31.5%;
+  background: url(../../images/tip/button/backb.png) no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+}
+main .backb:active, main .backb:hover {
+  background-position: 0 -5.626rem;
+}
+main .againb {
+  bottom: 20%;
+  width: 12.36rem;
+  height: 2.5rem;
+  background: url(../../images/tip/button/againb.png) no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+}
 main .off {
   color: #fff;
   width: 3.438rem;
