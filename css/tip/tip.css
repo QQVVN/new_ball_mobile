@@ -231,6 +231,55 @@ main .nt5 {
 main .nt6 {
   bottom: 3%;
 }
+main .mbg {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: url(../../images/tip/multiple/multiple_tip.png) no-repeat;
+  background-size: 900vw 100%;
+  background-position: 0 0;
+}
+main .mmt2 {
+  background-position: -100vw 0;
+}
+main .mmt3 {
+  background-position: -200vw 0;
+}
+main .mmt4 {
+  background-position: -300vw 0;
+}
+main .mmt5 {
+  background-position: -400vw 0;
+}
+main .mmt6 {
+  background-position: -500vw 0;
+}
+main .mmt7 {
+  background-position: -600vw 0;
+}
+main .mmt8 {
+  background-position: -700vw 0;
+}
+main .mmt9 {
+  background-position: -800vw 0;
+}
+main .mnxb {
+  position: fixed;
+  left: 25%;
+  bottom: 25%;
+  z-index: 1;
+  width: 20.25rem;
+  height: 5.626rem;
+  background: url(../../images/tip/button/nextb.png) no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+}
+main .mnxb:active, main .mnxb:hover {
+  background-position: 0 -5.626rem;
+}
 main .realb,
 main .backb,
 main .againb {
