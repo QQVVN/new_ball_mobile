@@ -130,14 +130,24 @@ table {
 }
 
 main {
-  background-color: #000;
   position: relative;
-}
-main img {
-  display: block;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  margin: 0 auto;
+}
+main .bg {
+  height: 100%;
+  background: url(../../images/tip/index/index_tip.png) no-repeat;
+  background-size: 400vw 100%;
+  background-position: 0 0;
+}
+main .mt2 {
+  background-position: -100vw 0;
+}
+main .mt3 {
+  background-position: -200vw 0;
+}
+main .mt4 {
+  background-position: -300vw 0;
 }
 main .okb {
   margin-top: 2%;
