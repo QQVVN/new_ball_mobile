@@ -160,8 +160,8 @@ main .mt4 {
 }
 main .okb {
   margin-top: 2%;
-  position: absolute;
-  top: 54%;
+  position: fixed;
+  bottom: 40%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -175,10 +175,10 @@ main .okb:active, main .okb:hover {
   background-position: 0 -5.626rem;
 }
 main .t3 {
-  top: 20%;
+  bottom: 75%;
 }
 main .t4 {
-  top: 74%;
+  bottom: 20%;
 }
 main .off {
   color: #fff;

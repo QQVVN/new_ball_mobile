@@ -29,8 +29,8 @@ main {
     }
     .okb {
         margin-top: 2%;
-        position: absolute;
-        top: 54%;
+        position: fixed;
+        bottom: 40%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
@@ -45,10 +45,10 @@ main {
         }
     }
     .t3 {
-        top: 20%;
+        bottom: 75%;
     }
     .t4 {
-        top: 74%;
+        bottom: 20%;
     }
     .off {
         color: #fff;
