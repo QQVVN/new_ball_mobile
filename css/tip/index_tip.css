@@ -203,7 +203,7 @@ main .smt6 {
 }
 main .nxb {
   position: fixed;
-  bottom: 25%;
+  bottom: 24%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -217,7 +217,7 @@ main .nxb:active, main .nxb:hover {
   background-position: 0 -5.626rem;
 }
 main .nt2 {
-  bottom: 28%;
+  bottom: 27%;
 }
 main .nt3 {
   bottom: 24%;
