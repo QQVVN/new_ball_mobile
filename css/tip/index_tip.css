@@ -288,6 +288,29 @@ main .off:active, main .off:hover {
   color: #4c4c4c;
   background-color: #fff;
 }
+main .soff {
+  color: #fff;
+  width: 3.438rem;
+  height: 3.438rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  z-index: 1;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 0;
+}
+main .soff span {
+  display: block;
+  margin-top: 1.4rem;
+}
+main .soff:active, main .soff:hover {
+  color: #4c4c4c;
+  background-color: #fff;
+}
 
 a {
   position: absolute;
