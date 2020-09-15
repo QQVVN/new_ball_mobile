@@ -78,8 +78,8 @@ main {
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
-        width: 10.125rem + 10.125rem;
-        height: 2.813rem + 2.813rem;
+        width: 10.125rem * 2;
+        height: 2.813rem * 2;
         background: url(../../images/tip/button/nextb.png) no-repeat;
         background-size: 100%;
         background-position: 0 0;
