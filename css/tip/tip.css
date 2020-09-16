@@ -280,6 +280,28 @@ main .mnxb {
 main .mnxb:active, main .mnxb:hover {
   background-position: 0 -5.626rem;
 }
+main .mt3 {
+  left: 45%;
+  bottom: 31%;
+}
+main .mt4 {
+  left: 45%;
+  bottom: 48%;
+}
+main .mt5 {
+  left: 45%;
+  bottom: 17%;
+}
+main .mt6 {
+  bottom: 42%;
+}
+main .mt7 {
+  bottom: 13%;
+}
+main .mt8 {
+  left: 28%;
+  bottom: 50%;
+}
 main .realb,
 main .backb,
 main .againb {
@@ -297,7 +319,7 @@ main .realb {
   background-position: 0 0;
 }
 main .backb {
-  bottom: 30%;
+  bottom: 31.5%;
   background: url(../../images/tip/button/backb.png) no-repeat;
   background-size: 100%;
   background-position: 0 0;

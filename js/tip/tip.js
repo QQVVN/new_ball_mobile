@@ -13,7 +13,7 @@ $(function () {
         }
     });
 
-    $('.nxb').on('click', function () {
+    $('.nxb,.mnxb').on('click', function () {
         let parent = $(this).parent();
         $(parent.next()).toggleClass('none');
     });
