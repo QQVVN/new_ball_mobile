@@ -1,3 +1,69 @@
+@charset "UTF-8";
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "my_font";
+  src: local("Arial"), local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
+  unicode-range: U+4E00-9FFF, U+2E80-2EFF, U+0020-007F;
+}
+@font-face {
+  font-family: "my_font";
+  src: url(../font/Bahnschrift.TTF);
+  unicode-range: U+0020-007F;
+}
+@font-face {
+  font-family: "my_font";
+  src: url(../font/Bahnschrift.TTF);
+  unicode-range: U+0040;
+}
+@font-face {
+  font-family: "my_font";
+  src: url(../font/Bahnschrift.TTF);
+  unicode-range: U+0024;
+}
+p,
+button,
+input,
+a,
+div,
+span {
+  -ms-font-family: "my_font";
+  -moz-font-family: "my_font";
+  -webkit-font-family: "my_font";
+  font-family: "my_font";
+}
+
+span {
+  -ms-font-family: "my_font";
+  -moz-font-family: "my_font";
+  -webkit-font-family: "my_font";
+  font-family: "my_font";
+}
+
+* {
+  -ms-font-family: "my_font";
+  -moz-font-family: "my_font";
+  -webkit-font-family: "my_font";
+  font-family: "my_font";
+}
+
+a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
 html,
 body,
 div,
@@ -83,52 +149,69 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+a {
+  text-decoration: none;
 }
 
+/* Set core body defaults */
 body {
-  line-height: 1;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background: #f7f7f7;
+  position: relative;
+  overflow: hidden;
 }
 
-ol,
-ul {
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
   list-style: none;
 }
 
-blockquote,
-q {
-  quotes: none;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+/* Inherit fonts for inputs and buttons */
+* {
+  outline: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 320px) {
+  html {
+    font-size: 14px;
+  }
+
+  main article.menu.menu.menu.menu.menu {
+    height: 43vh;
+  }
+}
 main {
   position: relative;
   width: 100%;
